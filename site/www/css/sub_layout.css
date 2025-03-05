@@ -1,0 +1,93 @@
+/* (주)한신정보기술 김예지 - 2017.07 */
+
+.sub_top_head{position:relative;background:url('../images/sub/sub_top_head.gif') no-repeat center top;text-align:center;}
+.sub_top_head .wrap{padding:47px 0;background:url('../images/sub/sub_top_head.gif') no-repeat center top;}
+.sub_depth1{font-size:40px;line-height:45px;color:#102a63;font-weight:600;}
+.path{margin-top:10px;vertical-align:middle;}
+.path span{display:inline-block;padding-right:15px;margin-right:10px;background:url('../images/sub/path_arrow.png') no-repeat right 6px;font-size:16px;color:#000;}
+
+.sub_service{margin-bottom:10px;background:#3b5fae;}
+.sub_service > .wrap{background:#3b5fae;}
+/* 서브 네비게이션 */
+.navi_wrap{position:relative;height:50px;}
+.navi_wrap .home_btn{display:block;float:left;border-left:1px solid #627fbe;border-right:1px solid #627fbe;}
+.navi_wrap .home_btn a{display:block;width:49px;height:50px;background:url('../images/sub/sub_navi_home.png') no-repeat center 6px;font-size:0;line-height:0;}
+.navi_wrap > div{position:relative;display:block;float:left;min-width:200px;}
+.navi_wrap button{display:block;position:relative;min-width:201px;height:50px;padding:0 35px 0 15px;border-right:1px solid #627fbe;font-size:16px;line-height:18px;color:#fff;overflow:hidden;text-align:left;white-space:nowrap;letter-spacing:-1px;}
+.navi_wrap button i{display:block;position:absolute;right:15px;top:50%;width:11px;height:11px;margin-top:-5px;background:url('../images/sub/sub_navi_more.png') no-repeat 50%;transition:all 0.5s ease-in-out;}
+.navi_wrap button.on i{transform:rotate(90deg);}
+.navi_wrap .menu_list{display:none;position:absolute;left:0;top:50px;width:100%;z-index:10;background-color:#3b5fae;}
+.navi_wrap .menu_list li{padding:10px 15px;border-top:1px solid #4f6fb6;}
+.navi_wrap .menu_list li a{color:#fff;}
+.navi_wrap .menu_list li a .blank{display:inline-block;width:21px;height:17px;margin-left:5px;background:url('/common/images/sub/template.png') no-repeat -40px 0;vertical-align:middle;}
+
+/* 사이드메뉴 */
+.side_depth1 > li,.side_depth1 > li:first-child,.side_depth1 > li:last-child{border:none;}
+.side_depth1 > li > a{margin-bottom:5px;border:1px solid #e0e0e0;}
+.side_depth1 > li > a:hover,.side_depth1 > li.on > a{border-color:#19377a;}
+.side_depth1 > li.on > a, .side_depth1 a:hover{font-weight:normal;}
+.side_depth1 li.on > a, .side_depth1 a:hover{font-weight:normal;}
+.side_depth2{margin-bottom:5px;background-color:#4b5e88;}
+.side_depth2 > li a{color:#fff;}
+.side_depth2 > li.on a, .side_depth2 > li a:hover{color:#fff;}
+.side_depth2 li > a .blank{display:inline-block;width:21px;height:17px;margin-left:5px;background:url('/common/images/sub/template.png') no-repeat -40px top;vertical-align:middle;}
+.side_depth2 > li.on > a, .side_depth2 > li > a:hover{color:#fff799 !important;}
+.side_depth2 > li.on li a{color:#fff;font-weight:normal;}
+.side_depth2 > li > a:before,.side_depth3 a:before{background-color:#fff;}
+.side_depth3 > li.on a, .side_depth3 > li a:hover{background-image:url('../images/sub/side_depth3_on.png');}
+.side_depth2 li.on li.on a,.side_depth3 > li a:hover{text-decoration:underline;}
+.side_depth3 > li a{text-decoration:none;}
+
+/* 서브상단 */
+.sub_head{padding:37px 0 6px;border:none;background:url('../images/sub/sub_head_line.png') repeat-x left bottom;}
+.sub_title h2{margin-bottom:25px;font-weight:600;}
+.sub_head .cnt_link{top:-47px;right:0;height:26px;}
+.sub_head .cnt_link li:before{background-color:#9dafd7;}
+.sub_head .cnt_link .share .share_button{background-image:url('../images/sub/share.png');}
+.sub_head .cnt_link .print a{background-image:url('../images/sub/print.png');}
+.sub_head .sns_list .facebook a{background-image:url('../images/sub/facebook_icon.png');}
+.sub_head .sns_list .twitter a{background-image:url('../images/sub/twitter_icon.png');}
+@media only screen and (max-width:1000px) {
+	.sub_top_head{border-bottom:1px solid #d0d0d0;}
+	
+	.sub_service{display:none;}
+	
+	/* 서브상단 */
+	.sub_head .cnt_link{top:auto;bottom:30px;}
+	.sub_head .cnt_link li:before{background-color:#cacaca;}
+	.sub_head .cnt_link .share .share_button{background-image:url('/common/images/layout/share.png');}
+	.sub_head .cnt_link .print a{background:url('/common/images/layout/print.png') no-repeat right center;}
+	.sub_head .sns_list .facebook a{background-image:url('/common/images/layout/facebook_icon.png');}
+	.sub_head .sns_list .twitter a{background-image:url('/common/images/layout/twitter_icon.png');}
+}
+
+/* 만족도조사 및 담당자 정보 */
+.satisfaction {margin:100px 0 50px;padding:0;}
+.satisfaction .manager_info{position:relative;padding:0 20px;border:1px solid #dadada;border-left:5px solid #4d5360;}
+.satisfaction .manager_info ul{padding:10px 0;}
+.satisfaction .manager_info ul li{float:left;margin-left:20px;padding-left:20px;font-size:14px;}
+.satisfaction .manager_info ul li:first-child{margin-left:0;padding-left:0;}
+.satisfaction .manager_info ul li strong{display:inline-block;color:#000;}
+.satisfaction .satisfaction_list {padding:20px;margin-top:4px;border:1px solid #dadada;background-color:#f5f5f5;}
+.satisfaction .question{margin-bottom:5px;}
+.satisfaction .satisfaction_list label{vertical-align:middle;}
+.satisfaction .satisfaction_list .input_radio{display:block;}
+.satisfaction .satisfaction_list label{display:inline-block;margin-right:20px;}
+.satisfaction .satisfaction_list .opinion {display:block;margin-top:10px;}
+.satisfaction .satisfaction_list .opinion input[type="text"]{float:left;height:30px;width:90%;border:1px solid #dadada;line-height:30px;}
+.satisfaction .satisfaction_list .opinion input[type="submit"]{float:right;width:60px;height:34px;border:none;background-color:#4d5360;line-height:34px;color:#fff;}
+@media all and (max-width:667px) {
+    .satisfaction {margin:5px 10px 35px 10px;}
+    .satisfaction .manager_info h3{display:inline-block;left:2%;float:none;padding:0 5px;border-right:none;}
+    .satisfaction .manager_info ul{margin-left:110px;}
+    .satisfaction .manager_info ul li{float:none;margin-left:10px;}
+    .satisfaction .satisfaction_list .input_radio,.satisfaction .satisfaction_list .opinion{float:none;width:100%;margin:0 0 5px 0;}
+    .satisfaction .satisfaction_list .opinion input[type="text"]{width:65%;}
+    .satisfaction .satisfaction_list .opinion input[type="submit"]{width:30%;}
+
+}
+@media all and (max-width:400px) {
+    .satisfaction .manager_info h3{display:block;position:relative;}
+    .satisfaction .manager_info h3 span{display:inline-block;}
+    .satisfaction .manager_info ul{margin-left:2%;border-left:none;}
+}

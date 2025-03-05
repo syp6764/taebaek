@@ -1,0 +1,913 @@
+@charset "UTF-8";
+
+/* ===== 전사이트 공통으로 쓰는 페이지 ===== */
+/* 접수상태 */
+/* 
+	* .normal = 클릭 X
+
+	<대표>, <365세이프타운>
+	접수마감, 예약완료 : .btn.small.bg_color9
+	폐강, 예약취소 : .btn.small
+*/
+.state1{background-color:#f26522;}/* 접수중, 예약신청 */
+.state2{background-color:#008d83;}/* 대기자 접수중, 예약수정 */
+.state3{background-color:#2e7fc6;}/* 접수대기, 예약검토중 */
+/*
+	<석탄박물관>
+*/
+.state4{background-color:#d4724f;}/* 접수중 , 전시중 */
+.state5{background-color:#264d72;}/* 접수대기 , 전시예정 */
+.state6{background-color:#605ca8;}/* 승인대기 */
+.state7{background-color:#009b90;}/* 대기자 */
+.state8{background-color:#bd030a;}/* 신청취소 */
+.state9{background-color:#595555;}/* 접수마감, 접수완료 , 종료 */
+
+@media screen and (max-width:414px) {
+	.bbs_btn_wrap .fleft,.bbs_btn_wrap .fright{float:none;}
+}
+
+/* 개인정보수집동의 */
+.privacy{}
+.privacy .text_box{overflow-y:scroll;height:150px;}
+.agree_check.univ_side_job{margin:0 5px;text-align:center;}
+.agree_check.univ_side_job span{display:inline-block;}
+
+/* == 완료페이지 == */
+.finish_page{margin-bottom:50px;}
+.finish_page .box_wrap{padding:50px 20px;}
+.finish_box{text-align:center;}
+.finish_box .top_txt{font-size:35px;line-height:40px;color:#384049;}
+.finish_box .top_txt span{color:#f26522;font-weight:600;}
+.finish_box .end_txt{font-size:30px;line-height:33px;color:#505050;}
+.finish_box .cont_box{width:600px;margin:37px auto;border-top:3px solid #ededed;border-bottom:3px solid #ededed;border-radius:26px;}
+.finish_box .cont_box .inner{padding:40px 0;border:1px solid #e8e8e8;border-radius:26px;}
+.finish_box .cont_box i{display:inline-block;width:125px;height:125px;background:url('/common/images/program/finish_page_icon.png') no-repeat;vertical-align:middle;}
+.finish_box .cont_box i.join_icon{background-image:url('/common/images/login/finish_page_icon.png');}
+.finish_box .cont_box .txt{display:inline-block;font-size:17px;vertical-align:middle;}
+/* 2. 석탄박물관 */
+.finish_box p span{color:#fc6f58;font-weight:600;}
+/* 3. 365safetown */
+.finish_box .cont_box i.reservation_icon.icon01{background-image:url('/common/images/program/reservation_finish_page_icon1.png');}
+.finish_box .cont_box i.reservation_icon.icon02{background-image:url('/common/images/program/reservation_finish_page_icon2.png');}
+.finish_box .reservation_data{margin-left:15px;font-size:25px;color:#4b4b4b;font-weight:600;letter-spacing:-1px;}
+.finish_box .reservation_data em{font-size:30px;line-height:32px;color:#f26522;}
+@media screen and (max-width:800px) {
+	/* == 완료페이지 == */
+	.finish_box .cont_box{display:inline-block;width:auto;}
+	.finish_box .cont_box .inner{padding:40px 30px;}
+}
+@media screen and (max-width:640px) {
+	/* == 완료페이지 == */
+	.finish_box .top_txt{font-size:25px;line-height:28px;}
+	.finish_box .end_txt{font-size:20px;line-height:22px;}
+	.finish_box .cont_box i{width:105px;height:105px;margin-left:10px;background-size:105px;}
+	.finish_box .cont_box .txt{display:block;margin-top:15px;font-size:15px;}
+	.finish_box .cont_box .inner{padding:20px 20px 20px 10px;}
+	/* 3. 365safetown */
+	.finish_box .reservation_data{font-size:18px;}
+	.finish_box .reservation_data em{font-size:22px;line-height:24px;}
+}
+
+/* == 공통 달력 == */
+.calendar{}
+.plan_legend{font-size:14px;color:#363636;}
+.plan_legend span{display:inline-block;}
+.place{display:inline-block;width:60px;font-size:12px;color:#fff;text-align:center;vertical-align:middle;}
+a.place{color:#fff;}
+.calendar .holiday{display:block;color:#ed1c24;font-weight:600;}
+.calendar_top h3{display:inline-block;margin:0 20px;padding:0;background:none;color:#000;font-size:45px;font-weight:normal;line-height:47px;vertical-align:middle;}
+.calendar_top h3:before{display:none;}
+.calendar_top{width:100%;padding-top:13px;text-align:center;}
+.calendar_top.type2{height:inherit;}
+.calendar_top a{display:inline-block;width:48px;height:48px;background-repeat:no-repeat;background-position:50%;border:1px solid #ebebeb;border-radius:25px;color:transparent;font-size:0;line-height:0;vertical-align:middle;}
+.calendar_top .year_prev{background-image:url('/common/images/program/year_prev.png');}
+.calendar_top .cal_prev{background-image:url('/common/images/program/cal_prev.png');}
+.calendar_top .cal_next{background-image:url('/common/images/program/cal_next.png');}
+.calendar_top .year_next{background-image:url('/common/images/program/year_next.png');}
+.calendar_table{width:100%;margin-top:30px;}
+.calendar_table thead th{padding:9px 0;border:1px solid #d1d1d1;border-top:3px solid #7d7d7d;font-size:20px;font-weight:normal;}
+.calendar_table thead th.sun{border-top-color:#ed1c24;}
+.calendar_table thead th.sat{border-top-color:#0054a6;}
+.calendar_table .day{display:block;}
+.calendar_table .sun .day{color:#ed1d25;font-weight:600;}
+.calendar_table .sat .day{color:#0255a6;font-weight:600;}
+.calendar_table tbody td{border:1px solid #d1d1d1;border-top:none;vertical-align:top;}
+.calendar_table tbody td .cont{display:block;min-height:80px;padding:10px;color:#666;}
+.calendar_table tbody td:hover .cont,.calendar_table tbody td .cont.today{padding:5px;border:5px solid #f7941d;}
+/* 대표 - 시정캘린더, 열린시장실 - 시장일정 */
+.small_schedule .calendar{float:left;width:49%;}
+.small_schedule .calendar_top h3{margin:0 15px;font-size:25px;line-height:27px;}
+.small_schedule .calendar_top a{width:27px;height:27px;}
+.small_schedule .calendar_top .year_prev{background-image:url('/common/images/program/year_prev2.png');}
+.small_schedule .calendar_top .cal_prev{background-image:url('/common/images/program/cal_prev2.png');}
+.small_schedule .calendar_top .cal_next{background-image:url('/common/images/program/cal_next2.png');}
+.small_schedule .calendar_top .year_next{background-image:url('/common/images/program/year_next2.png');}
+.small_schedule .calendar_table{margin-top:18px;}
+.small_schedule .calendar_table thead{background-color:#f6f6f6;}
+.small_schedule .calendar_table thead th{font-size:17px;}
+.small_schedule .calendar_table .sun{color:#ff3333;}
+.small_schedule .calendar_table .sat{color:#006699;}
+.small_schedule .calendar_table tbody td{text-align:center;vertical-align:middle;}
+.small_schedule .calendar_table tbody td .cont{display:block;padding:5px;min-height:auto;height:36px;text-decoration:none;}
+.small_schedule .calendar_table tbody td:hover .cont,.small_schedule .calendar_table tbody td .cont.today{padding:0;}
+.small_schedule .calendar_table .day{margin-top:7px;}
+.small_schedule .schedule_list{float:right;width:47.8%;margin-top:60px;}
+.small_schedule .schedule_list .cont{min-height:311px;padding:0 20px;border-top:2px solid #000;border-bottom:2px solid #000;background:url('/common/images/program/schedule_list_line.png') repeat left top;}
+.small_schedule .schedule_list .cont li{padding:13px 0;}
+.small_schedule .schedule_list .cont a{display:block;overflow:hidden;font-size:17px;color:#5f5f5f;text-overflow:ellipsis;white-space:nowrap;}
+.small_schedule .schedule_list .cont a:before{display:inline-block;width:5px;height:1px;margin-right:5px;background-color:#5f5f5f;vertical-align:middle;content:'';}
+/* 달력 - 관리자 */
+.calendar_manage{padding:25px 0 0 0;background:url(/common/images/sub/box1_pattern1.png) #757575 repeat;}
+.calendar_list{position:relative;margin:0 0 50px 0;padding:0;}
+.calendar_manage_top h3{display:block;position:absolute;top:0;left:0;width:100%;margin:0;padding:0;background:none;color:#fff;font-size:25px;font-weight:600;line-height:27px;text-align:center;vertical-align:middle;}
+.calendar_manage_top h3:before{display:none;}
+.calendar_manage_top h3 i{display:inline-block;width:32px;height:28px;margin:0 13px 0 0;background:url(/common/images/program/calendar_bul.png) no-repeat left top;vertical-align:middle;}
+.calendar_manage_table .cal_schdul{padding-top:37px;text-align:center;vertical-align:middle;}
+.calendar_manage_table .cal_schdul li{text-align:left;margin-top:5px;}
+.calendar_manage_top{position:relative;height:60px;margin:0 20px;padding:0;border-bottom:1px solid #939393;text-align:center;}
+.calendar_manage_top .top_inner{position:relative;width:240px;margin:0 auto 0 0;}
+.calendar_manage_top .top_inner_manage { text-align:right; }
+.calendar_manage .top_inner button,.calendar_manage_top .top_inner a{display:inline-block;position:relative;z-index:1;width:13px;height:23px;margin:0;padding:0;background:url(/common/images/program/calendar_sprite.png) no-repeat;border:none;color:transparent;font-size:0;line-height:0;vertical-align:middle;}
+.calendar_manage .top_inner .cal_prev{float:left;background-position:left top;}
+.calendar_manage .top_inner .cal_next{float:right;background-position:right top;}
+.calendar_manage .explanation{color:#bababa;font-size:14px;line-height:16px;text-align:right;}
+.calendar_manage_table tbody .sat .place{color:#fff;}
+.calendar_manage_table{width:100%;margin:0;border-collapse:separate;border-spacing:0;}
+.calendar_manage_table thead th{width:14.285714%;margin:0;padding:12px 0;}
+.calendar_manage_table thead th span{color:#fff;font-size:16px;font-weight:500;line-height:18px;}
+.calendar_manage_table tbody{border-top:1px solid #e2e2e2;border-left:1px solid #e2e2e2;}
+.calendar_manage_table tbody td{position:relative;width:12.285714%;max-width:113px;min-width:113px;height:113px;padding:0 0 1% 0;background-color:#fff;border-bottom:1px solid #e2e2e2;border-right:1px solid #e2e2e2;vertical-align:top;}
+.calendar_manage_table tbody td > div{height:111px;padding:1px;}
+.calendar_manage_table tbody td:first-child{max-width:112px;min-width:112px;border-left:1px solid #e2e2e2;}
+.calendar_manage_table tbody td:hover{background-color:#f9f9f9;}
+.calendar_manage_table td span{position:absolute;top:15px;left:10px;}
+.calendar_manage_table tbody .today span{border-bottom:1px solid #383838;}
+.calendar_manage_table tbody .sat span{color:#0d1fa3;}
+.calendar_manage_table tbody .sat.today span{border-color:#0d1fa3;}
+.calendar_manage_table tbody .sun span,.calendar_table tbody .holiday span{color:#c30c0c;}
+.calendar_manage_table tbody .sun.today span,.calendar_table tbody .holiday.today span{border-color:#c30c0c;}
+.calendar_manage_table .plan{background-color:#f8f8f8;}
+.calendar_manage_table .event_count{margin:0;text-align:center;}
+.calendar_manage_table .event_count a{display:inline-block;padding:0 0 2px 0;border-bottom:1px solid #eb6100;color:#eb6100;font-size:12px;font-weight:400;line-height:16px;}
+.calendar_manage_table .event_count a:hover{text-decoration:none;}
+.calendar_manage_table .plan_list{height:64px;margin:0 10px 5px;padding:20px 0 0;overflow:hidden;}
+.calendar_manage_table .plan_list li{margin:2px 0;padding:0 0 0 10px;background:url(/site/www/images/sub/bu1.gif) no-repeat left 4px;font-size:12px;line-height:14px;white-space:nowrap;}
+/* 2. 석탄박물관 */
+.coalmuseum.calendar .plan_legend span{margin-left:35px;}
+.coalmuseum.calendar .plan_legend span:first-child{margin:0;}
+.coalmuseum.calendar .plan_legend .place{margin-right:8px;}
+.coalmuseum.calendar .place{line-height:20px;}
+.coalmuseum.calendar .place.leg1{background-color:#d4724f;}
+.coalmuseum.calendar .place.leg2{background-color:#456dc7;}
+.coalmuseum.calendar .place.leg3{background-color:#474a4f;}
+.coalmuseum.calendar .state{margin-top:20px;text-align:center;}
+.coalmuseum.calendar .state .people{display:block;font-size:18px;color:#000;}
+/* 3. 365세이프타운 */
+.week_top .date{font-size:30px;line-height:32px;}
+.week_top .date .calendar_btn{display:inline-block;width:38px;height:38px;margin-bottom:5px;background:url('/common/images/program/calendar_week.png') no-repeat left top;font-size:0;line-height:0;vertical-align:middle;}
+.week_info{padding-bottom:40px;margin-bottom:40px;border-bottom:1px solid #d7d7d7;}
+.week_info .cont_col{margin-left:-3.5%;}
+.week_info .cont_box{float:left;width:29.833333%;margin:0 0 30px 3.5%;}
+.week_info .title{padding:21px 0 20px;margin-bottom:15px;background-repeat:repeat;background-position:left top;font-size:22px;color:#f4f4f4;text-align:center;}
+.week_info .title.type1{background-image:url('/common/images/program/week_info_title_bg.gif');}
+.week_info .title.type2{background-image:url('/common/images/program/week_info_title_bg2.gif');}
+.week_info .title.type3{background-image:url('/common/images/program/week_info_title_bg3.gif');}
+.safetown365 .calendar_table tbody td .cont{height:auto;min-height:130px;}
+.safetown365.calendar .plan_legend{margin-top:8px;}
+.safetown365.calendar .plan_legend span{margin-left:20px;}
+.safetown365.calendar .plan_legend span:first-child{margin:0;}
+.safetown365.calendar .place{width:17px;height:17px;margin-right:4px;border-radius:100%;font-size:11px;line-height:17px;}
+.safetown365.calendar .place.leg1{background-color:#456dc7;}
+.safetown365.calendar .place.leg2{background-color:#555;}
+.safetown365.calendar .place.leg3{background-color:#ce0008;}
+.safetown365.calendar .state{margin-left:10px;font-size:14px;}
+.safetown365.calendar .booking_no{color:#0861bc;text-align:center;}
+.safetown365.calendar .booking_no i{display:inline-block;height:85px;line-height:85px;vertical-align:middle;}
+.safetown365.calendar .booking_no .txt{display:inline-block;line-height:20px;vertical-align:middle;}
+.reservation_flow{margin:20px 0 50px;}/* 예약흐름도 */
+.reservation_flow li{position:relative;float:left;width:34%;margin-left:2%;}
+.reservation_flow .last{width:26%;}
+.reservation_flow .icon{display:inline-block;width:102px;height:102px;margin-right:22px;background-repeat:no-repeat;background-position:left top;vertical-align:middle;}
+.reservation_flow .step1 .icon{background-image:url('/common/images/program/reservation_flow_icon1.png');}
+.reservation_flow .on .step1 .icon{background-image:url('/common/images/program/reservation_flow_icon1_on.png');}
+.reservation_flow .step2 .icon{background-image:url('/common/images/program/reservation_flow_icon2.png');}
+.reservation_flow .on .step2 .icon{background-image:url('/common/images/program/reservation_flow_icon2_on.png');}
+.reservation_flow .step3 .icon{background-image:url('/common/images/program/reservation_flow_icon3.png');}
+.reservation_flow .on .step3 .icon{background-image:url('/common/images/program/reservation_flow_icon3_on.png');}
+.reservation_flow li > div{margin-right:80px;}
+.reservation_flow li > i{position:absolute;right:7px;top:50%;width:59px;height:34px;margin-top:-17px;background:url('/common/images/program/reservation_flow_arrow.png') no-repeat left top;}
+.reservation_flow .on > i{background-image:url('/common/images/program/reservation_flow_arrow_on.png');}
+.reservation_flow .last > div{margin-right:0;}
+.reservation_flow .txt{display:inline-block;color:#c5c5c5;letter-spacing:-1px;vertical-align:middle;}
+.reservation_flow .on .txt{color:#000;}
+.reservation_flow .txt span{display:block;margin-bottom:5px;font-size:25px;line-height:27px;}
+.reservation_flow .txt strong{display:block;font-size:35px;line-height:37px;}
+.calendar_link_icon{display:inline-block;width:21px;height:17px;margin-right:8px;background-image:url('/common/images/program/calendar_icon.png');vertical-align:middle;}
+/* 3. 365세이프타운 - 이벤트 */
+.bbs_gallery.safetown_event ul.list{width:101.8%;margin:10px -0.9%;}
+.bbs_gallery.safetown_event ul.list li{width:23.2%;min-height:85px;margin:10px 0.9% 15px;}
+.bbs_gallery.safetown_event ul.list li a{color:#000;}
+.bbs_gallery.safetown_event ul.list li a .photo{line-height:85px;}
+.bbs_gallery.safetown_event ul.list li a .photo .progress{display:block;position:absolute;right:20px;top:0;width:41px;padding:10px 0 16px;background-image:url('/common/images/program/event365_progress.png');font-size:13px;line-height:15px;color:#fff;font-weight:600;text-align:center;z-index:10;}
+.bbs_gallery.safetown_event ul.list li a .screen .photo .progress{background-image:url('/common/images/program/event365_progress2.png');}
+.bbs_gallery.safetown_event ul.list li a .schedule .photo .progress{background-image:url('/common/images/program/event365_progress3.png');}
+.bbs_gallery.safetown_event ul.list li a .photo img{max-height:85px;}
+.bbs_gallery.safetown_event ul.list li a .photo_info{padding:25px 20px 20px;text-align:left;}
+.bbs_gallery.safetown_event ul.list li a .subject{height:47px;margin:0 0 15px;font-size:18px;text-overflow:inherit;white-space:inherit;}
+/* 3. 365세이프타운 - 대쉬보드 */
+.safetown_dash_board .top_box{margin:74px 0 67px;text-align:center;}
+.safetown_dash_board .top_box .tit{display:inline-block;padding-right:115px;background:url('/common/images/program/dash_board_bg.gif') no-repeat right top;font-size:47px;line-height:50px;color:#2b2f32;}
+.safetown_dash_board .top_box .tit a{display:inline-block;vertical-align:bottom;line-height:0;}
+.safetown_dash_board .top_box .tit span{display:inline-block;margin-bottom:5px;vertical-align:bottom;}
+.safetown_dash_board .top_box .tit em{font-weight:600;}
+.safetown_dash_board .top_box .tit .color1{color:#dd8726;}
+.safetown_dash_board .top_box .tit .color2{color:#f26522;}
+.safetown_dash_board .box{margin-bottom:50px;font-size:35px;line-height:37px;color:#000;}
+.safetown_dash_board .cont_col{margin-left:-3.5%;}
+.safetown_dash_board .cont_box{float:left;width:29.833333%;margin:0 0 30px 3.5%;}
+.safetown_dash_board .cont_box .title{padding:30px 0;margin-bottom:15px;background-repeat:repeat;background-position:left top;font-size:25px;line-height:27px;color:#f4f4f4;font-weight:600;text-align:center;}
+.safetown_dash_board .cont_box.type1 .title{background-image:url('/common/images/program/week_info_title_bg.gif');}
+.safetown_dash_board .cont_box.type2 .title{background-image:url('/common/images/program/week_info_title_bg2.gif');}
+.safetown_dash_board .cont_box.type3 .title{background-image:url('/common/images/program/dash_board_title_bg3.gif');}
+.safetown_dash_board .cont_box table.table{font-size:20px;}
+.safetown_dash_board .cont_box table.table td{font-weight:600;}
+.safetown_dash_board .cont_box.type1 table.table td{color:#2e3192;}
+.safetown_dash_board .cont_box.type2 table.table td{color:#0076a3;}
+.safetown_dash_board .cont_box.type3 table.table td{color:#662d91;}
+@media screen and (max-width:1000px) {
+	/* 3. 365세이프타운 */
+	.week_info .cont_col{margin-left:-2%;}
+	.week_info .cont_box{width:31.333333%;margin-left:2%;}
+	.week_info .title{font-size:17px;letter-spacing:-1px;}
+	.safetown365.calendar .state{margin:0;letter-spacing:-1px;}
+	.reservation_flow li{width:35%;margin:0;text-align:center;}
+	.reservation_flow .last{width:30%;}
+	.reservation_flow .icon{display:block;margin:0 auto 15px;}
+	.reservation_flow li > i{right:20px;}
+	/* 3. 365세이프타운 - 이벤트 */
+	.bbs_gallery.safetown_event ul.list li{width:31.5%;}
+	/* 3. 365세이프타운 - 대쉬보드 */
+	.safetown_dash_board .top_box .tit{background-position:right bottom;}
+	.safetown_dash_board .top_box .tit a{display:block;width:80%;margin:0 auto;}
+	.safetown_dash_board .top_box .tit span{display:block;margin-top:15px;}
+	.safetown_dash_board .cont_col{margin-left:-2%;}
+	.safetown_dash_board .cont_box{width:31.333333%;margin-left:2%;}
+	.safetown_dash_board .cont_box .title{padding:15px 0;font-size:22px;letter-spacing:-1px;}	
+	.safetown_dash_board .cont_box .title em{display:block;}
+	.safetown_dash_board .cont_box table.table{font-size:18px;}
+}
+@media screen and (max-width:800px) {
+	/* ===== 전사이트 공통으로 쓰는 페이지 ===== */
+	/* == 공통 달력 == */
+	.calendar_top h3{margin:0 10px;font-size:25px;line-height:27px;}
+	.calendar_top a{width:34px;height:34px;background-size:auto 15px;}
+	.calendar_table{border:1px solid #d1d1d1;border-bottom:none;}
+	.calendar_table thead,.calendar_table colgroup{display:none;}
+	.calendar_table tbody tr:nth-child(2n+1){background-color:#f3f3f3;}
+	.calendar_table tbody td{display:block;width:100%;border:none;}
+	.calendar_table tbody td .cont{min-height:auto;border-bottom:1px solid #d1d1d1;}
+	.calendar_table tbody td .cont:hover{padding:10px;border:none;border-bottom:1px solid #d1d1d1;}
+	/* 대표 - 시정캘린더, 열린시장실 - 시장일정 */
+	.small_schedule .calendar{float:none;width:100%;}
+	.small_schedule .calendar_top a{width:27px;height:27px;background-size:auto;}
+	.small_schedule .calendar_table{border:1px solid #d1d1d1;border-bottom:none;}
+	.small_schedule .calendar_table thead,.calendar_table colgroup{display:block;}
+	.small_schedule .calendar_table thead{display:table-header-group;}
+	.small_schedule .calendar_table tbody tr:nth-child(2n+1){background:none;}
+	.small_schedule .calendar_table tbody td{display:table-cell;width:14.285714%;border:1px solid #d1d1d1;border-top:none;}
+	.small_schedule .calendar_table tbody td .cont{height:36px;border-bottom:none;}
+	.small_schedule .calendar_table tbody td .cont:hover,.small_schedule .calendar_table tbody td .cont.today{padding:0;border:5px solid #f7941d;}
+	.small_schedule .schedule_list{float:none;width:100%;margin-top:35px;}
+	.small_schedule .schedule_list .cont a{display:inline;font-size:15px;}
+	/* 2. 석탄박물관 */
+	.coalmuseum.calendar .plan_legend{text-align:center;}
+	.coalmuseum.calendar .plan_legend span{margin:0;}
+	.coalmuseum.calendar .state{margin:0;}
+	/* 3. 365세이프타운 */
+	.week_info .cont_col{margin-left:0;}
+	.week_info .cont_box{float:none;width:100%;margin-left:0;}
+	.safetown365 .calendar_table tbody td .cont{min-height:auto;}
+	.safetown365.calendar .booking_no{text-align:left;}
+	.safetown365.calendar .booking_no i{display:none;}
+	.reservation_flow .txt span{font-size:25px;line-height:27px;}
+	.reservation_flow .txt strong{font-size:30px;line-height:37px;}
+	/* 3. 365세이프타운 - 이벤트 */
+	.bbs_gallery.safetown_event ul.list{width:104%;margin:10px -2%;}
+	.bbs_gallery.safetown_event ul.list li{width:46%;margin:10px 2% 15px;}
+	/* 3. 365세이프타운 - 대쉬보드 */
+	.safetown_dash_board .top_box .tit{font-size:32px;line-height:34px;}
+	.safetown_dash_board .cont_col{margin-left:0;}
+	.safetown_dash_board .cont_box{float:none;width:100%;margin-left:0;}
+	.safetown_dash_board .cont_box .title{font-size:18px;}
+	.safetown_dash_board .cont_box .title em{display:inline;}
+	.safetown_dash_board .cont_box table.table{font-size:15px;}
+}
+@media screen and (max-width:640px) {
+	/* 3. 365세이프타운 */
+	.week_top .date{font-size:20px;line-height:22px;}
+	.reservation_flow li{width:37.5%;}
+	.reservation_flow .last{width:25%;}
+	.reservation_flow li > div{margin-right:45px;}
+	.reservation_flow li > i{right:0;width:45px;height:26px;background-size:45px auto;}
+	.reservation_flow .icon{width:80px;height:80px;background-size:80px auto;}
+	.reservation_flow .txt span{font-size:18px;line-height:20px;}
+	.reservation_flow .txt strong{font-size:21px;line-height:23px;}
+	/* 3. 365세이프타운 - 이벤트 */
+	.bbs_gallery.safetown_event ul.list li a .subject{height:auto;margin-bottom:5px;font-size:15px;text-overflow:ellipsis;white-space:nowrap;}
+	.bbs_gallery.safetown_event ul.list li a .subject br{display:none;}
+	.bbs_gallery.safetown_event ul.list li a .photo_info{padding:15px 10px 10px;}
+	/* 3. 365세이프타운 - 대쉬보드 */
+	.safetown_dash_board .top_box{margin:40px 0;}
+	.safetown_dash_board .top_box .tit{padding-right:150px;background-size:140px auto;}
+	.safetown_dash_board .top_box .tit a{max-width:300px;width:100%;}
+	.safetown_dash_board .box{font-size:22px;line-height:24px;}
+}
+@media screen and (max-width:414px) {
+	/* 2. 석탄박물관 */
+	.coalmuseum.calendar .plan_legend{width:200px;margin:0 auto;text-align:left;}
+	/* 3. 365세이프타운 */
+	.week_top > div{float:none;text-align:center;}
+	.week_top .date{margin-bottom:10px;font-size:20px;line-height:22px;}
+	.safetown365 .legend_box > div{float:none;}
+	.safetown365.calendar .plan_legend{text-align:center;}
+	.safetown365.calendar .plan_legend span{margin-left:3%;}
+	.safetown365.calendar .plan_legend{margin:0 0 8px;}
+	.reservation_flow li{float:none;width:100%;padding-bottom:40px;margin-bottom:20px;text-align:left;}
+	.reservation_flow .last{width:100%;padding:0;}
+	.reservation_flow li > div{width:200px;margin:0 auto;}
+	.reservation_flow .last > div{margin:0 auto;}
+	.reservation_flow li > i{right:auto;top:auto;left:50%;bottom:0;margin:0 0 0 -22px;transform:rotate(90deg);}
+	.reservation_flow .icon{display:inline-block;margin:0 15px 0 0;}
+	.reservation_flow .txt{text-align:left;}
+	/* 3. 365세이프타운 - 대쉬보드 */
+	.safetown_dash_board .top_box .tit{padding:0;background:none;}
+}
+
+/* ========= 대표 ======== */
+/* 교육관리_나의교육신청조회인증 */
+.info_check { word-break:keep-all;}
+.info_check .text {  margin-bottom:30px; padding-top:50px; font-size:15px; color:#505050; text-align:center;}
+.info_check .dot_box { width:540px; margin: 0 auto 30px;  border:1px dashed #a1acc4;}
+.info_check .dot_box ul { width:80%; margin:0 auto; padding:20px 0;}
+.info_check .dot_box ul li { margin:5px 0; padding-left:15px; background:url(../images/contents/infocheck_bu.gif) no-repeat left 18px;}
+.info_check .dot_box ul li .tit { display:inline-block; width:75px;}
+.info_check .dot_box ul li .input_area { display:inline-block; width:335px;}
+.info_check .dot_box ul li .input_area input { height:40px;}
+.info_check .btn_area { text-align:center;}
+.info_check .btn_area .btn { margin:0 3px; width:120px;}
+
+@media only screen and (max-width:800px){
+	.info_check .dot_box { width:auto;}
+}
+
+@media only screen and (max-width:500px){
+	.info_check .dot_box ul li .input_area {  width:100%;}
+	.info_check .dot_box ul li .input_area .id_name,.info_check .dot_box ul li .input_area .pw { width:100%; box-sizing:border-box;}
+}
+
+@media only screen and (max-width:400px){
+	.info_check .btn_area .btn {  width:46%; margin:0 1%;}
+}
+/*부동산 프로그램페이지*/
+
+.realty {word-break:keep-all;}
+.realty .realty_wrap { padding-bottom:40px; background:url(/site/www/images/contents/realty_bg.gif) no-repeat center top; border:1px solid #dadada; border-top:none;}
+.realty  .realty_category {   text-align:center;} 
+.realty  .realty_category ul { border:none; margin-left:1px;}
+.realty  .realty_category li {float:left;position:relative; width:33.33%; text-align:center;}
+.realty  .realty_category li a {display:block;padding:15px 25px;border:1px solid #d5d5d5;border-bottom:2px solid #4f4f4f; border-left:none; font-size:17px;}
+.realty  .realty_category li:first-child a {border-left:1px solid #d5d5d5;} 
+.realty  .realty_category li.active a{border:2px solid #4f4f4f;border-bottom:1px solid #fff; color:#3b5fae; font-weight:600;}
+
+
+.realty .tit_area { text-align:center;}
+.realty .tit_area .tit { padding:45px 0; color:#000; font-size:40px; font-weight:600; text-align:center; line-height:65px;}
+.realty .tit_area .tit:after { content:''; display:inline-block;  width:55px; height:65px; margin-left:10px; background:url(/site/www/images/contents/realty_titbg.png) no-repeat; vertical-align:middle;}
+
+.realty .check_type { text-align:center;}
+.realty .check_type button { display:inline-block; width:200px; height:50px; background-color:#fff; border:1px solid #4d5360; line-height:15px; text-align:center;}
+.realty .check_type button.active { background-color:#3b5fae; border-color:#3b5fae; color:#fff;}
+.realty .check_type button .mobile_block { display:none;}
+
+.realty .form_block { width:90%; margin:30px auto 0; padding:20px 12% 20px 3%; background:#163067; box-sizing:border-box; color:#fff; }
+.realty .form_block .inner_block {text-align:right; }
+.realty .form_block .inner_block .tit { margin-right:3px; font-size:20px;}
+.realty .form_block .inner_block .input_text { width:400px; height:40px; color:#8c8c8c; text-align:right;}
+.realty .form_block .inner_block .input_text:focus { color:#000;} 
+.realty .form_block .inner_block .submit { height:45px; padding:1px 25px;}
+.realty .form_block .inner_block.type2 .input_text { width:150px;}
+.realty .form_block .inner_block.type2 .margin_area { display:inline-block; width:30px;}
+
+.realty .realty_result { width:90%; margin:0 auto; padding:0 12% 20px; background:#163067;  box-sizing:border-box;  color:#fff; text-align:right;}
+.realty .realty_result ul { display:inline-block; min-width:55%; text-align:left;}
+.realty .realty_result ul li { padding:2px 0;}
+.realty .realty_result ul li span.tit { color:#fff; font-size:17px; font-weight:600;}
+.realty .realty_result ul li span.tit em { font-size:14px; color:#aeaeae;}
+.realty .realty_result ul li span.number { float:right; color:#98fff7; font-size:20px;}
+.realty .star_notice { width:90%; margin:20px auto; font-size:14px; letter-spacing:-1px; }
+
+@media only screen and (max-width:1000px){
+	.realty .form_block .inner_block .input_text { width:310px;}
+	.realty .realty_result { padding:0 6% 20px;}
+	.realty .realty_result ul {min-width:70%;}
+}
+@media only screen and (max-width:800px){
+	.realty .form_block{padding:20px 3%;}
+	.realty .form_block .inner_block {text-align:center; }
+	.realty .form_block .inner_block.type2 { position:relative; padding-right:0;  text-align:center;}
+	.realty .form_block .inner_block.type2 .input_text { width:340px; margin-left:10px;}
+	.realty .form_block .inner_block.type2 .margin_area { display:block; width:30px; }
+	.realty .form_block .inner_block.type2 .submit { position:absolute; right:0; top:0; height:92px;}
+}
+@media only screen and (max-width:640px){
+	.realty .realty_category li{width:33.333333%;margin-top:-1px;}
+	.realty .realty_category li a{padding:10px 0;border-bottom:1px solid #d5d5d5;}
+	.realty .realty_category li.active a{padding:9px;border-bottom:2px solid #4f4f4f;}
+	.realty .check_type button { width:31%;  }
+	.realty .check_type button .mobile_block { display:block;}
+	.realty .form_block .inner_block .input_text,.realty .form_block .inner_block .submit  { width:100% !important; box-sizing:border-box;}
+	.realty .form_block .inner_block .tit {display:block; text-align:left;}
+	.realty .form_block .inner_block.type2 {padding-right:0;}
+	.realty .form_block .inner_block.type2 .input_text { margin-left:0;}
+	.realty .form_block .inner_block.type2 .submit { position:static; height:45px; }
+	.realty .form_block .inner_block.type2 .margin_area  { height:10px;}
+	.realty .realty_result ul { width:100%; }
+
+	.realty .realty_result ul li { margin-bottom:5px;  padding:5px 0; border-bottom:1px dashed rgba(255,255,255,0.2);}
+	.realty .realty_result ul li span { display:block; }
+	.realty .realty_result ul li span.number  { float:none; text-align:right;}
+}
+@media only screen and (max-width:450px){
+	.realty { background-position:left top;}
+	.realty .tit_area .tit { height:auto; font-size:28px;}
+	.realty .tit_area .tit:after { height:50px; background-size:auto 50px;}
+}
+/* 홈>정보공개>정보공개제도>사전정보공표 */
+.publicize {padding:19px; border:1px solid #e2e2e2; background-color:#fbfbfb;}
+.publicize ul{margin:-12px 0 0 -1.4%;}
+.publicize li { float:left; width:12.885714%; margin:12px 0 0 1.4%;  }
+.publicize li a  { display:block; padding:1px; border:1px dashed #bebebe; color:#444;text-align:center; text-decoration:none;}
+.publicize li a:hover,.publicize li.on a{color:#000;font-weight:600;}
+.publicize li a span { display:block; padding:11px 0 12px;}
+.publicize li a:hover span,.publicize li.on span{background-color:#e3e3e3;}
+.publicize li a .tit {display:block;font-size:14px;}
+.publicize li:first-child span{height:107px;padding:0;}
+.publicize li:first-child .tit{display:inline-block;font-size:20px;vertical-align:middle;}
+.publicize li a span:before {content:''; display:block;  height:47px; margin-bottom:10px; background-repeat:no-repeat; background-position:50%;} 
+.publicize li:first-child span:before{display:inline-block;height:107px;margin:0;vertical-align:middle;content:'';}
+.publicize li.icon1 a span:before { background-image:url('/common/images/program/publicize_icon1.png'); } 
+.publicize li.icon2 a span:before { background-image:url('/common/images/program/publicize_icon2.png'); } 
+.publicize li.icon3 a span:before { background-image:url('/common/images/program/publicize_icon3.png'); } 
+.publicize li.icon4 a span:before { background-image:url('/common/images/program/publicize_icon4.png'); } 
+.publicize li.icon5 a span:before { background-image:url('/common/images/program/publicize_icon5.png'); } 
+.publicize li.icon6 a span:before { background-image:url('/common/images/program/publicize_icon6.png'); } 
+.publicize li.icon7 a span:before { background-image:url('/common/images/program/publicize_icon7.png'); } 
+.publicize li.icon8 a span:before { background-image:url('/common/images/program/publicize_icon8.png'); } 
+.publicize li.icon9 a span:before { background-image:url('/common/images/program/publicize_icon9.png'); } 
+.publicize li.icon10 a span:before { background-image:url('/common/images/program/publicize_icon10.png'); } 
+.publicize li.icon11 a span:before { background-image:url('/common/images/program/publicize_icon11.png'); } 
+.publicize li.icon12 a span:before { background-image:url('/common/images/program/publicize_icon12.png'); } 
+@media only screen and (max-width:1000px) {
+	.publicize li{width:15.266666%;}
+}
+@media only screen and (max-width:800px) {
+	.publicize ul{margin-left:-2%;}
+	.publicize li { width:23%; margin-left:2%;  }
+}
+@media only screen and (max-width:640px) {
+	.publicize li a {font-size:14px;}
+}
+@media only screen and (max-width:500px) {
+	.publicize ul{margin-left:-3%;}
+	.publicize li { width:30.333333%; margin-left:3%;  }
+	.publicize li a span{padding:8px 0 6px;}
+	.publicize li:first-child span{height:83px;}
+	.publicize li a span:before{height:37px;margin-bottom:5px;background-size:auto 33px;}
+	.publicize li:first-child span:before{height:83px;}
+}
+@media only screen and (max-width:414px) {
+	.publicize li { width:47%; }
+}
+
+/* ========= 석탄박물관 ======== */
+/* 특별전시 */
+.special_exhibition{margin:60px 0 0 -46px;}
+.special_exhibition li{position:relative;float:left;width:269px;margin:0 0 50px 46px;text-align:center;}
+.special_exhibition a{display:block;color:#000;}
+.special_exhibition a span{display:block;}
+.special_exhibition .img{overflow:hidden;border:1px solid #000;line-height:0;}
+.special_exhibition .img img{max-width:267px;width:100%; height:160px;}
+.special_exhibition a:hover .img img{transform:scale(1.2);transition:all 400ms;}
+.special_exhibition .txt{position:relative;padding:26px 2% 22px;border:1px solid #000;border-top:none;}
+.special_exhibition .txt:before{position:absolute;left:50%;top:-1px;width:52px;height:5px;margin-left:-26px;background-color:#d4724f;content:'';}
+.special_exhibition .txt strong{display:block;overflow:hidden;font-size:18px;text-overflow:ellipsis;white-space:nowrap;}
+.special_exhibition .txt .date{color:#686868;}
+.special_exhibition .state{position:absolute;right:0;top:-20px;width:57px;font-size:18px;line-height:65px;color:#fff;vertical-align:middle;}
+.special_exhibition .state.state5{padding:11px 0 12px;line-height:21px;}
+@media screen and (max-width:1000px) {
+	.special_exhibition{margin-left:-3%;}
+	.special_exhibition li{width:30.333333%;margin-left:3%;}
+}
+@media screen and (max-width:640px) {
+	.special_exhibition li{width:47%;}
+	.special_exhibition .img{padding:20px 0;}
+}
+@media screen and (max-width:414px) {
+	.special_exhibition{margin-left:0;}
+	.special_exhibition li{float:none;width:100%;margin-left:0;}
+	.special_exhibition .img img{width:220px;}
+}
+/* 유물정보 - 상세페이지 */
+.relic_view .slider_box{float:left;}
+.relic_view #jssor_1{position: relative; margin: 0 auto; top: 0px; left: 0px; }
+.relic_view .slides{cursor: default; position: relative; top: 0px; left: 0px; width:365px; height:365px; overflow: hidden;border:1px solid #c8c8c8;}
+.relic_view .slides .img_area{text-align:center;}
+.relic_view .slides .img_area .img{position:static !important;width:auto !important;height:auto !important;}
+.relic_view .slides .img_area a.img_view{display:block;position:absolute;right:0;bottom:0;width:41px;height:41px;background:#000 url('/DATA/site/coalmuseum/relic_view_icon.png') no-repeat 50%;font-size:0;}
+.relic_view .thumbnail{position:absolute;left:0px !important;bottom:0;width:367px;height:67px;border:1px solid #c8c8c8;box-sizing:border-box;}
+.relic_view .thumbnail .thumbnail{border:none;}
+.relic_view .thumbnail .thumb_wrap{top:0 !important;}
+.relic_view .thumbnail .p{position:absolute;  top:0; left:0; width:95px; height:65px;}
+.relic_view .thumbnail .t{position:absolute; top:0; left:0; width:100%; height:100%; border:none;}
+.relic_view .thumbnail .w {position:absolute; top:0px; left:0px; width:100%; height:100%;text-align:center;background-color:#333;}
+.relic_view .thumbnail .w img.t{position:static;width:auto;}
+.relic_view .thumbnail .c {position:absolute; top:0px; left:0px; width:95px; height:65px;}
+.relic_view .thumbnail .pav .c{top:0px; left:0px; background-color:rgba(0,0,0,0.3);}
+.relic_view .thumbnail .p:hover .c,.relic_view .thumbnail .p:focus .c{background-color:rgba(0,0,0,0.3);}
+.relic_view .thumbnail .p.pdn .c{}
+.relic_view .prev,.relic_view .next {display: block;position: absolute; bottom:1px; width: 39px;height:65px;cursor: pointer; background-repeat:no-repeat;background-position:50%; overflow: hidden;}
+.relic_view .prev {left:1px; border-right:1px solid #c8c8c8; background-image:url('/DATA/site/coalmuseum/relic_view_prev.png'); }
+.relic_view .next {right:1px; border-left:1px solid #c8c8c8; background-image:url('/DATA/site/coalmuseum/relic_view_next.png'); }
+/*.relic_view .prev:hover { background-position: -125px -35px; }
+.relic_view .next:hover { background-position: -185px -35px; }
+.relic_view .prev.jssora05ldn { background-position: -245px -35px; }
+.relic_view .next.jssora05rdn { background-position: -305px -35px; }*/
+.relic_view .text_box{float:right;width:54.8%;}
+.relic_view .text_box h3{margin:0 0 20px;}
+@media screen and (max-width:1000px) {
+	.relic_view .slider_box{width:48%;}
+	.relic_view .text_box{width:48%;}
+}
+@media screen and (max-width:640px) {
+	.relic_view .slider_box,.relic_view .text_box{float:none;width:100%;}
+	.relic_view .text_box{margin-top:30px;}
+}
+/* 체험프로그램 상세페이지 */
+.experience_info .experience_photo{float:left;width:430px;}
+.experience_info .experience_photo .photo_list {margin-bottom:14px; padding:9px; border:1px solid #dfdfdf;}
+.experience_info .experience_photo .photo_list .photo_slide {line-height:0;text-align:center;}
+.experience_info .experience_photo .photo_dots {height:100px;}
+.experience_info .experience_photo .photo_dots li {float:left; width:33.333333%; height:100%;}
+.experience_info .experience_photo .photo_dots li button {display:block; width:100%; height:100%;padding:0; font-size:0;background-repeat:no-repeat;}
+.experience_info .cont_box{float:right;width:430px;}
+@media screen and (max-width:1000px) {
+	.experience_info .experience_photo,.experience_info .cont_box{width:48%;}
+}
+@media screen and (max-width:640px) {
+	.experience_info .experience_photo{float:none;width:100%;max-width:430px;margin:0 auto 50px;}
+	.experience_info .cont_box{float:none;width:100%;}
+}
+
+/* 석탄박물관 - 광산용어 */
+.consonant_search{}
+.consonant_search li{float:left;width:6.666667%;}
+.consonant_search li a{display:block;border-left:1px solid #3a4d77;font-size:18px;line-height:46px;color:#fff;background-color:#092155;text-align:center;text-decoration:none;}
+.consonant_search li:last-child a{font-size:15px;}
+.consonant_search li a:hover,.consonant_search .on a{background-color:#2c52a3;}
+.term_search{margin-top:30px;border-top:2px solid #151515;}
+.term_search .list{width:100%;padding:0;}
+.term_search .list > dt{display:block;position:relative;border-bottom:1px solid #e9e9e9}
+.term_search .list > dt button{display:block;height:auto;width:100%;padding:11px 0;border:none;text-align: left;line-height: 1.8em;vertical-align: middle}
+.term_search .list .category{position:absolute;left:5px;top:8px;padding:0 27px 0 23px;background:#2c52a3 url('/common/images/board/term_category.gif') no-repeat right top;line-height:34px;color:#fff;}
+.term_search .list > dt button .question {display:inline-block;margin:0 30px 0 106px;color:#161616;font-weight:600;}
+.term_search .list > dd{display:none;position:relative;padding-bottom:10px;border-bottom: 1px solid #ccc;background:#f8f8f8;}
+.term_search .list > dd .answer {margin:0 15px 0 102px;padding:15px 0 5px;}
+.term_search .list > dd .answer .category{background:#d4724f url('/common/images/board/term_category2.gif') no-repeat right top;}
+.term_search .list > dd .term_btn {margin-right:15px;text-align: right}
+.term_search .list > dd .term_btn button{display:inline-block;height:26px;padding:0 10px;border:1px solid #ccc;background:#fff;}
+.term_search .list > dd .term_btn a{display:inline-block;height:26px;margin:1px 0;padding:0 10px;border:1px solid #ccc;background:#fff;line-height:24px;}
+.term_search .list > dt{background:url("/common/images/board/term_search_down.png") no-repeat 98% 21px;}
+.term_search .list > dt.active{background-image:url("/common/images/board/term_search_up.png");}
+@media only screen and (max-width:640px){
+    .consonant_search li{width:20%;}
+	.consonant_search li a{border-top:1px solid #3a4d77;font-size:15px;line-height:35px;}
+}
+
+/* ==== 열린시장실 ==== */
+.govern{margin-bottom:50px;}
+.govern .list{margin-left:-1.8%;}
+.govern .list > li{float:left;width:31.533333%;margin:0 0 18px 1.8%;}
+.govern .title{display:block;padding:11px 0;border:1px solid #000;font-size:18px;color:#000;font-weight:600;text-align:center;}
+.govern .sijang_info{min-height:172px;padding:20px 20px 20px 7px;border:1px solid #d4d4d4;border-top:none;}
+.govern .sijang_info .portrait{float:left;}
+.govern .sijang_info .cont{float:right;width:55%;}
+.govern .bu{margin:0;padding:0;}
+.govern .bu li{margin-top:6px;line-height:20px;letter-spacing:-1.5px;}
+.govern .bu li:first-child{margin-top:0;}
+.govern .bu li em{display:block;color:#3b5fae;font-weight:600;}
+.govern .bu li:first-child em{display:inline-block;}
+@media screen and (max-width:1000px) {
+	.govern .sijang_info{min-height:272px;padding:20px;}
+	.govern .sijang_info .portrait{float:none;width:96px;margin:0 auto 5px;}
+	.govern .sijang_info .cont{float:none;width:100%;}
+}
+@media screen and (max-width:640px) {
+	.govern .list{margin-left:-2%;}
+	.govern .list > li{width:48%;margin-left:2%;}
+}
+@media screen and (max-width:414px) {
+	.govern .list{margin-left:0;}
+	.govern .list > li{float:none;width:100%;margin-left:0;}
+	.govern .sijang_info{min-height:auto;}
+}
+
+/* 시립도서관 - 자료검색 */
+.data_srch_box .have_area{margin-bottom:25px;}
+.data_srch_box .have_area .lib_srch{position:relative;padding-left:142px;margin-bottom:20px;border:1px solid #e6e6e6;}
+.data_srch_box .have_area .lib_srch .tit{position:absolute;left:0;top:0;width:142px;height:100%;background-color:#444b4a;font-size:23px;color:#fff;font-weight:600;text-align:center;vertical-align:middle;}
+.data_srch_box .have_area .lib_srch .tit:before{display:inline-block;height:100%;vertical-align:middle;content:'';}
+.data_srch_box .have_area .lib_check_box{padding:24px 0 23px 30px;background-color:#fafafa;}
+.data_srch_box .have_area .lib_check_box label{margin-right:27px;}
+.data_srch_box .unit_srch .unit{margin-bottom:15px;}
+.data_srch_box .unit_srch .table select,.data_srch_box .unit_srch .table input{padding:0;margin:0;width:100%;}
+
+/* 사이트맵 공통 */
+.sitemap_box{padding:0 0 45px;border-bottom:1px solid #d6d6d6;}
+.sitemap_box > div > ul > li{float:left;width:22%;margin:0 1.5% 35px;}
+.sitemap_box > div > ul > li > a{display:block;padding:14px 5px;border:1px solid #acb0bb;color:#384049;font-size:18px;font-weight:600;line-height:20px;text-align:center;}
+.sitemap_box .sm_depth3{margin:15px 20px 0 20px;}
+.sitemap_box .sm_depth3 a{padding:0 0 0 13px;background:url(/common/images/program/sitemap_bul.png) no-repeat left 5px;}
+@media all and (max-width:640px) {
+    .sitemap_box > div > ul > li{width:47%;margin-bottom:10px;}
+    .sitemap_box > div > ul > li > a{padding:10px 5px;font-size:14px;line-height:18px;}
+}
+@media all and (max-width:320px) {
+    .sitemap_box > div > ul > li{width:97%;}
+}
+
+/* 배너존 */
+.web_link_zone{margin:20px 0;padding:0 20px;border:1px solid #d3d3d3;}
+.web_link_zone li{float:left;position:relative;text-align:center;}
+.web_link_zone .link_info{overflow:hidden;}
+.web_link_zone .link_info li{width:25%;padding:15px 0 13px;margin:-1px 0 0 -1px;border-top:1px dotted #d3d3d3;}
+.web_link_zone .link_info li:before{display:block;position:absolute;left:0;top:50%;width:1px;height:18px;margin-top:-9px;background-color:#d3d3d3;content:'';}
+.web_link_zone .link_info a{display:inline-block;font-size:17px;color:#5d5d5d;text-decoration:none;white-space:nowrap;}
+.web_link_zone .link_info a:hover{color:#000;font-weight:600;}
+@media only screen and (max-width:640px) {
+	.web_link_zone{padding:0 4%;}
+	.web_link_zone .link_info li{width:50%;padding:10px 0;}
+	.web_link_zone .link_info a{font-size:15px;}
+}
+@media only screen and (max-width:500px) {
+	
+}
+
+
+
+
+/* 2019.12 한신정보기술 안희정 추가 */
+
+/* 시립도서관(대관) */
+.tab_menu .reservation{display:inline-block; position: absolute; right:0; top:0;}
+
+.rent_lib .daliy_inquire .tab_menu{position:relative;}
+.rent_lib .calendar_inquire .tab_menu{position:relative;}
+.rent_lib .calendar_inquire span.orange_box{display:inline; width:30px; height:20px; margin-right:10px; border:5px solid #f7941d; font-size:10px; line-height:0; color:transparent; box-sizing:border-box;}
+.rent_lib .calendar_inquire .calendar{margin-top:30px;}
+.rent_lib .calendar_inquire .calendar .calendar_top{margin-bottom: 10px;}
+
+@media only screen and (max-width:640px) {
+	.tab_menu .reservation{display:inline-block; position: relative;}
+}
+
+a.btn.reservation, input.btn.reservation {background-color:#049477; width:150px; color:#fff;}
+
+.daeguan .box .box_wrap .inner{padding:60px 30px; text-align:center;}
+.daeguan .box .box_wrap .inner .cont{display:inline-block; position:relative; padding-top:26px; padding-bottom:25px; padding-left:150px; text-align:left;}
+.daeguan .box .box_wrap .inner .cont:before{display:inline-block; position:absolute; left:0; top:0; width:125px; height:125px; background-repeat:no-repeat; background-image:url(/common/images/program/daeguan_ok_icon.png); content:'';}
+.daeguan .box .box_wrap .inner .cont .title{display:inline-block; margin-bottom:10px; font-size:35px; line-height:47px; letter-spacing:-0.025em; color:#384049;}
+.daeguan .box .box_wrap .inner .cont .title span{font-weight:600; color:#f26522;}
+.daeguan .box .box_wrap .inner .cont p{font-size:17px; line-height:30px; letter-spacing:-0.025em; color:#4b4b4b; font-weight:600;}
+
+.daeguan.impossible .box .box_wrap .inner .cont:before{background-image:url(/common/images/program/daeguan_nop_icon.png); content:'';}
+
+.daeguan.complete .box .box_wrap .inner .cont{padding-left:0; padding-top:0; text-align:center;}
+.daeguan.complete .box .box_wrap .inner .cont:before{display:none;}
+.daeguan.complete .box .box_wrap .inner .cont .complete_info{display:inline-block; position:relative; padding-top:26px; padding-left:150px; text-align:left; font-size:20px; line-height:30px; letter-spacing:-0.025em; font-weight:600;}
+.daeguan.complete .box .box_wrap .inner .cont .complete_info:before{display:inline-block; position:absolute; left:0; top:13px; width:125px; height:125px; background-repeat:no-repeat; background-image:url(/common/images/program/daeguan_ok_icon.png); content:'';}
+.daeguan.complete .box .box_wrap .inner .cont .complete_info .day_info{display:block;}
+.daeguan.complete .box .box_wrap .inner .cont .complete_info .day_info .real{color:#f26522;}
+.daeguan.complete .box .box_wrap .inner .cont .complete_info p{margin-top:12px; font-size:17px;}
+
+@media only screen and (max-width:640px) {
+	.daeguan .box .box_wrap .inner .cont{padding-top:140px; padding-bottom:0; padding-left:0; text-align:center;}
+	.daeguan .box .box_wrap .inner .cont:before{left:calc(50% - (125px /2));}
+
+	.daeguan.complete .box .box_wrap .inner .cont .complete_info{padding-top:150px; padding-left:0; text-align:center;}
+	.daeguan.complete .box .box_wrap .inner .cont .complete_info:before{left:calc(50% - (125px /2));}
+}
+
+/* 로그인페이지  */
+/* 로그인 */
+#login_box {width:100%; display:inline-block; margin-top: 50px;}
+#login_box .login_box_top {position:relative; background:url('../images/login/login_line.gif') repeat-x left 35px; text-align:center;}
+#login_box .login_box_top h3 {text-align:center; padding:0 40px; background:#fff; display:inline-block;}
+#login_box .login_box_top h3:before {content:""; display:inline-block; margin-left:16px; width:44px; height:54px; background:url('../images/login/login_icon.png') no-repeat -1px 1px; vertical-align:top;}
+#login_box .login_box_top h3 span {font-size:30px; font-weight:bold; color:#000; vertical-align:top; display:inline-block; margin:23px 0 0 30px }
+#login_box .login_box_top .text_1 {vertical-align:middle; font-size:16px; font-weight:bold; color:#14498d; margin:25px 0 5px}
+#login_box .login_box_top .text_1:before {content:""; margin:0 10px 0 0; width:32px; height:32px; display:inline-block;  background:url('../images/login/login_icon.png') no-repeat left -74px; vertical-align:middle;}
+#login_box .login_box_top .text_2 {font-size:15px; color:#333}
+#login_box .login_box_bot {margin:45px 0 0 0; width:100%; display:inline-block; border-top:1px dashed #7f93a0; border-bottom:2px solid #9eaeb9; background:#f2f5f8}
+#login_box .login_box_bot p {width:50%; float:left; text-align:center; padding:60px 0; box-sizing:border-box;}
+#login_box .login_box_bot p span {width:119px; height:118px; background-image:url('/common/images/login/login_icon.png'); background-repeat:no-repeat; display:block; margin:0 auto}
+#login_box .login_box_bot p span.icon_1 {background-position:-154px -80px}
+#login_box .login_box_bot p span.icon_2 {background-position:-281px -80px}
+#login_box .login_box_bot p:first-child {border-right:1px solid #9eaeb9}
+#login_box .login_box_bot p:first-child a {background:#184679;}
+#login_box .login_box_bot p a {width:220px; height:42px; line-height:42px; color:#fff;  display:block; margin:30px auto 0; background:#067ba7}
+#login_box .login_box_bot p a i {width:21px; height:21px; display:inline-block; vertical-align:middle; background:url('../images/login/login_icon.png') no-repeat left -118px; margin:0 0 0 10px}
+
+@media all and (max-width:600px) {
+	#login_box .login_box_top { background:url('../images/login/login_line.gif') repeat-x left 15px; margin:20px 0 0 0 }
+	#login_box .login_box_top h3 {padding:0 15px; }
+	#login_box .login_box_top h3 span {font-size:22px; margin:5px 0 0 10px}
+	#login_box .login_box_top h3:before {display:none;}
+	#login_box .login_box_top .text_1 {margin:15px 0 5px; font-size:15px}
+	#login_box .login_box_top .text_1:before {display:none}
+	#login_box .login_box_top .text_2 br {display:none}
+	#login_box .login_box_bot p {padding:30px 0}
+	#login_box .login_box_bot p a {width:100%}
+
+}
+
+.bbs_btn.inquiry {padding:0 3px;background-color:#000; border:1px solid #000; color:#fff;}
+
+
+/* 도서문화프로그램 */
+.book_culture{margin-bottom:30px;}
+
+.book_culture.detail .state_top{margin-bottom:20px;}
+.book_culture.detail .state_top .side_left{float:left;}
+.book_culture.detail .state_top .side_right{float:right;}
+
+.book_culture.application .w45p{display:inline-block; vertical-align:top;}
+
+@media all and (max-width:640px) {
+	.book_culture.application .w45p{width:100% !important;}
+}
+
+/* 도서문화프로그램 수강신청 팝업 */
+.book_alert .layer{display:none; position:fixed; left:calc(50% - 230px); top:100px;  z-index:90000;  width:460px; border:1px solid #7d7d7d; background-color:#fff;}
+.book_alert .layer.active{display:inline-block;}
+.book_alert .layer .title{padding-top:18px; padding-left:20px; padding-bottom:16px;border-bottom:1px solid #7d7d7d;}
+.book_alert .layer .title h3{font-size:17px; line-height:22px; font-weight:600; letter-spacing:-0.025em; color:#363636;}
+.book_alert .layer .close_btn{display:block; position:absolute; right:0; top:0; width:55px; height:55px; background-repeat:no-repeat; background-position:center; background-image:url(/common/images/program/book_alert_layer_close.png); font-size:10px; color:transparent; content:''; }
+.book_alert .layer .contbox{padding:21px 41px 40px 28px;}
+.book_alert .layer .contbox .inner{position:relative; padding-left:85px;}
+.book_alert .layer .contbox .inner:before{display:inline-block; position:absolute; left:0; top:14px; width:67px; height:67px; background-size:cover; background-image:url(/common/images/program/daeguan_ok_icon.png); content:'';}
+.book_alert .layer .contbox .inner p{margin:19px 0;font-size:17px; line-height:22px; letter-spacing:-0.025em; color:#444;}
+.book_alert .layer .contbox .inner .graybox{background-color:#f4f4f4;}
+.book_alert .layer .contbox .inner .graybox ul{padding:15px 10px 15px 20px; font-size:16px; line-height:26px; letter-spacing:-0.025em;}
+.book_alert .layer .contbox .btn_box{text-align:center;}
+.book_alert .layer .contbox .btn_box .btn {margin:5px; width:110px; height:40px !important; line-height:19px;}
+
+.book_alert.ready .layer .contbox .inner p.em_orange{color:#f26522;}
+
+@media all and (max-width:480px) {
+	.book_alert .layer{left:calc(50% - (95% / 2)); width:95%;}
+}
+
+.book_culture.complete {text-align:center;}
+.book_culture.complete .box .box_wrap{padding-top:60px; padding-bottom:45px;}
+.book_culture.complete .box .box_wrap .title{font-size:35px; line-height:45px; letter-spacing:-0.025em; color:#384049;}
+.book_culture.complete .box .box_wrap .title br{display:none;}
+.book_culture.complete .box .box_wrap .inner{margin:33px 200px;}
+.book_culture.complete .box .box_wrap .inner .textarea{display:inline-block; position:relative; padding-left:150px; padding-top:calc((125px - 81px)/2); padding-bottom:calc((125px - 81px)/2); letter-spacing:-0.025em; text-align:left;}
+.book_culture.complete .box .box_wrap .inner .textarea:before{display:inline-block; position:absolute; left:0; top:0; width:125px; height:125px; background-image:url(/common/images/program/daeguan_ok_icon.png); content:'';}
+.book_culture.complete .box .box_wrap .inner .textarea ul li{font-size:17px; font-weight:bold; color:#4b4b4b;}
+.book_culture.complete .box .box_wrap .bye{font-size:30px; line-height:30px; letter-spacing:-0.025em; color:#384049;}
+
+@media all and (max-width:1000px) {
+	.book_culture.complete .box .box_wrap .title br{display:inline-block;}
+	.book_culture.complete .box .box_wrap .inner{margin:33px 0;}
+}
+
+@media all and (max-width:640px) {
+	.book_culture.complete .box .box_wrap .title{font-size:25px; line-height:35px;}
+	.book_culture.complete .box .box_wrap .inner .textarea{padding-left:0; padding-top:100px; padding-bottom:calc((125px - 81px)/2); letter-spacing:-0.025em; text-align:left;}
+	.book_culture.complete .box .box_wrap .inner .textarea:before{left:calc(50% - 40px); top:0; width:80px; height:80px; background-size:cover;}
+	.book_culture.complete .box .box_wrap .inner .textarea ul li{font-size:17px; font-weight:bold; color:#4b4b4b;}
+	.book_culture.complete .box .box_wrap .bye{font-size:20px; line-height:30px;}
+}
+
+.book_culture .culture_btnbox{margin:35px;}
+.book_culture .culture_btnbox a{margin:5px;}
+.book_culture .culture_btnbox input[type="submit"]{margin:5px; width:110px; height:51px !important;}
+.book_culture.confirm .box.type3{padding-top:70px; text-align:center;}
+.book_culture.confirm .box.type3 p{font-size:15px; line-height:23px; letter-spacing:-0.025em; color:#384049; text-align:center;}
+.book_culture.confirm .box.type3 .table_box{margin-top:37px;display:inline-block; width:510px;}
+.book_culture.confirm .box.type3 .inner_table {width:100%; border-collapse: collapse;}
+.book_culture.confirm .box.type3 .inner_table tbody{width:100%; border-bottom:1px solid #dadada; border-left:1px solid #dadada; border-right:1px solid #dadada;}
+.book_culture.confirm .box.type3 .inner_table tbody tr:first-child th,.book_culture.confirm .box.type3 .inner_table tbody tr:first-child td{border-top:2px solid #4d5360;}
+.book_culture.confirm .box.type3 .inner_table tbody th{border-bottom:1px solid #dadada; border-right:1px solid #dadada; background-color:#f9f9f9;}
+.book_culture.confirm .box.type3 .inner_table tbody td{padding:8px;border-bottom:1px solid #dadada; text-align:left;}
+.book_culture.confirm .box.type3 .inner_table tbody td input{height:35px;}
+.book_culture.confirm .box.type3 .inner_table tbody td select{height:39px;}
+.book_culture.confirm .culture_btnbox a{ width:110px;}
+.book_culture.confirm .bottom_infobox{border:1px solid #dadada; padding:20px;}
+.book_culture.confirm .bottom_infobox ul{}
+.book_culture.confirm .bottom_infobox ul li{position:relative; float:left;margin:0 23px;}
+.book_culture.confirm .bottom_infobox ul li:before{display:inline-block; position:absolute; left:-23px; top:0; content:'/';}
+.book_culture.confirm .bottom_infobox ul li:first-child:before{display:none;}
+table.inner_table .phone {width:80px; text-align: center;}
+
+.book_alert.view .layer{text-align:center;}
+.book_alert.view .layer.active{display:inline-block;}
+.book_alert.view .layer .contbox{padding-right:28px;}
+.book_alert.view .layer .contbox .inner{margin:0 15px; padding-left:70px;}
+.book_alert.view .layer .inner p{display:inline-block; font-size:16px;text-align:left;}
+.book_alert.view .layer .inner:before{top:16px; background-image:url(/common/images/program/book_alert_q.png);}
+
+@media all and (max-width:600px) {
+	.book_culture.confirm .box.type3 .table_box{width:100%;}
+	.book_culture.confirm .box.type3 .inner_table tbody{border-left:none; border-right:none;}
+	.book_culture.confirm .box.type3 .inner_table tbody th{display:block; border-right:none; text-align:left; padding:8px;}
+	.book_culture.confirm .box.type3 .inner_table tbody td{display:block;}
+	.book_culture.confirm .box.type3 .inner_table tbody tr:first-child td{border-top:none;}
+}
+
+.book_culture .buttons_row{margin-top:30px;}
+.book_culture .buttons_row .left{float:left;}
+.book_culture .buttons_row .right{float:right;}
+
+.book_culture.my_application .book_alert.myapp .layer.active{display:inline-block;}
+
+
+
+/* 도서관 견학신청 */
+.lib_visit.list .calendar span.orange_box{display:inline; width:30px; height:20px; margin-right:10px; border:5px solid #f7941d; font-size:10px; line-height:0; color:transparent; box-sizing:border-box;}
+.lib_visit.list .calendar .calendar_table tbody td .cont{text-align:center;}
+.lib_visit.list .calendar .calendar_table tbody td .cont .day{text-align:left;}
+.lib_visit.list .calendar .calendar_table tbody td .cont .approval{font-weight:600; color:#0861bc;}
+.lib_visit.list .calendar .calendar_table tbody td .cont .unapproved{color:#000;}
+@media all and (max-width:800px) {
+	.lib_visit.list .calendar .calendar_table tbody td .cont{text-align:left;}
+}
+
+.lib_application .box .box_wrap{padding:54px; text-align:center;}
+.lib_application .box .box_wrap .inner{display:inline-block; position:relative; padding-top:27px; padding-bottom:27px; padding-left:145px; text-align:left;}
+.lib_application.impossible .box .box_wrap .inner:before{display:inline-block; position:absolute; left:0; top:0; width:125px; height:125px; background-repeat:no-repeat; background-image:url(/common/images/program/daeguan_nop_icon.png); content:'';}
+.lib_application.impossible .box .box_wrap .inner .title{font-size:35px; line-height:45px; letter-spacing: -0.025em; color:#384049;}
+.lib_application .box .box_wrap .inner p{margin-top:10px; font-size:17px; line-height:30px; font-weight:600; letter-spacing:-0.025em; color:#4b4b4b;}
+
+.lib_application.possible .box .box_wrap .inner{display:inline-block; position:relative; padding-top:54px; padding-bottom:54px;}
+.lib_application.possible .box .box_wrap .inner:before{display:inline-block; position:absolute; left:0; top:27px; width:125px; height:125px; background-repeat:no-repeat; background-image:url(/common/images/program/daeguan_ok_icon.png); content:'';}
+.lib_application.possible .box .box_wrap .title{display:block; font-size:35px; line-height:45px; letter-spacing: -0.025em; color:#384049;}
+.lib_application.possible .box .box_wrap .title br{display:none;}
+.lib_application.possible .box .box_wrap .inner .day{font-size:20px; line-height:30px; font-weight:600; letter-spacing:-0.025em; color:#4b4b4b;}
+
+
+@media all and (max-width:640px) {
+	.lib_application.impossible .box .box_wrap{padding:54px 20px;}
+	.lib_application.impossible .box .box_wrap .inner{padding-top:145px; padding-left:0; text-align:center;}
+	.lib_application.impossible .box .box_wrap .inner:before{left:calc(50% - (125px/2)); top:0;}
+	.lib_application.impossible .box .box_wrap .inner .title{font-size:35px; line-height:45px; letter-spacing: -0.025em; color:#384049;}
+	.lib_application.impossible .box .box_wrap .inner p{margin-top:10px; font-size:17px; line-height:30px; font-weight:600; letter-spacing:-0.025em; color:#4b4b4b;}
+
+	.lib_application.possible .box .box_wrap .title br{display:inline-block;}
+	.lib_application.possible .box .box_wrap .inner{padding-top:165px; padding-left:0; padding-bottom:0; text-align:center;}
+	.lib_application.possible .box .box_wrap .inner:before{left:calc(50% - (125px/2)); top:20px;}
+}
+
+/* 도서관 봉사신청 */
+.lib_visit.list .calendar span.orange_box{display:inline; width:30px; height:20px; margin-right:10px; border:5px solid #f7941d; font-size:10px; line-height:0; color:transparent; box-sizing:border-box;}
+.lib_visit.list .calendar .calendar_table tbody td .cont{text-align:center;}
+.lib_visit.list .calendar .calendar_table tbody td .cont .day{text-align:left;}
+
+/* 통합행사정보안내 */
+.integration_party .calender_info{margin-top:25px;border:1px solid #e9e9e9; background-color:#fafafa; text-align:center; box-sizing:border-box;}
+.integration_party .calender_info .schedule_ul{padding-top:15px; display:inline-block; font-size:0; line-height:0; text-align:center;}
+.integration_party .calender_info .schedule_ul li{display:inline-block; position:relative; padding-bottom:15px; padding-left:calc(35px/2); padding-right:calc(35px/2); font-size:15px; line-height:25px; vertical-align:middle; color:#2d2d2d;}
+
+.integration_party .party{display:inline-block; width:21px; height:25px; padding-right:8px; line-height:35px; background-repeat:no-repeat; background-image:url(/common/images/program/party_icon_sprite2.png); background-position:center; font-size:0; color:transparent; vertical-align:top;}
+.integration_party .party.n01{background-position:left -210px;}
+.integration_party .party.n02{background-position:left top;}
+.integration_party .party.n03{background-position:left -35px;}
+/*.integration_party .party.n04{background-position:left -70px;}*/
+.integration_party .party.n04{background-position:left -245px;}
+.integration_party .party.n05{background-position:left -105px;}
+.integration_party .party.n06{background-position:left -280px;}
+/*.integration_party .party.n06{background-position:left -140px;}*/
+.integration_party .party.n07{background-position:left -175px;}
+.integration_party .party.n08{background-position:left -245px;}
+.integration_party .party.n09{background-position:left -280px;}
+
+.integration_party .calender_info .bbs_search{padding:12px 0;margin-top:0; border-right:none; border-bottom:none; border-left:none;}
+.integration_party .calender_info .bbs_search .title{display:inline-block; position:relative; margin-right:20px; padding-left:20px; font-size:17px; color:#000;}
+.integration_party .calender_info .bbs_search .title:before{display:inline-block; position:absolute; left: 0; top:6px; width:14px; height:15px; background-repeat:no-repeat; background-image:url(/common/images/program/calender_title_icon.png); content:'';}
+.integration_party .calender_info .bbs_search select{min-width:138px;}
+.integration_party .calendar_table .cont{text-align:left;}
+.integration_party .calendar_table tbody td:hover .cont,.integration_party .calendar_table tbody td .cont.today{padding:7px;border:3px solid #818181;}
+.integration_party .schedule_btn{display:inline-block; width:290px; height:64px; border-radius:30px; background-color:#3b5fae; font-size:17px; line-height:64px; color:#fff;}
+.integration_party .schedule_btn span{position:relative;padding-left:42px;}
+.integration_party .schedule_btn span:before{display:inline-block; position:absolute; left:0; top:calc(50% - (33px /2)); width:31px; height:33px; background-image:url(/common/images/program/schedule_btn.png); background-repeat:no-repeat; content: '';}

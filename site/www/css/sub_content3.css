@@ -1,0 +1,281 @@
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 태백시 실업육상팀, 태백시 실업레스링팀, 핸드볼팀 */
+.taebaek_pt_box .img_area{float:left;}
+.taebaek_pt_box .cont_box{float:right; width:540px;}
+
+@media only screen and (max-width:1000px){
+	.taebaek_pt_box .img_area { float:none;  text-align:center;}
+	.taebaek_pt_box .cont_box { float:none; width:100%;}
+}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 핸드볼팀 > 장성초등학교 */
+.cts1010 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 핸드볼팀 > 황지초등학교 */
+.cts1011 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 핸드볼팀 > 황지여자중학교 */
+.cts1012 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 핸드볼팀 > 태백중학교 */
+.cts1013 .cont_box{width:615px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 핸드볼팀 > 황지정보산업고등학교 */
+.cts1014 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 핸드볼팀 > 태백기계공고 */
+.cts1015 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 축구팀 > 황지중앙초등학교 */
+.cts1017 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 태백시청실업팀 > 축구팀 > 황지중학교 */
+.cts1018 .cont_box{width:560px;}
+
+/* 스포츠 > 태백 체육팀 > 초중육성종목 */
+.cts1020 .training_event{margin-right:-20px;}
+.cts1020 .training_event li{float:left; margin:0 20px 20px 0;}
+.cts1020 .training_event li .tit_box{width:164px; height:44px; background-color:#3b5fae;}
+.cts1020 .training_event li .tit_box p{color:#fff; text-align:center; line-height:44px; font-size:20px;}
+.cts1020 .training_event li .icon_box {width:162px; border:1px solid #e1e1e1; border-bottom:0;}
+.cts1020 .training_event li .icon_box img{display:block; margin:0 auto;}
+.cts1020 .training_event li .btn.download:after{margin-left:58px;}
+
+@media only screen and (max-width:1000px){
+	.cts1020 .training_event { margin:0; text-align:center;}
+	.cts1020 .training_event li { display:inline-block; float:none;}
+}
+@media only screen and (max-width:450px){
+	.cts1020 .training_event li {  float:left; width:48%; margin:0 1% 10px; }
+	.cts1020 .training_event li .tit_box { width:100%;}
+	.cts1020 .training_event li .icon_box { width:100%;box-sizing:border-box;}
+	.cts1020 .training_event .btn.small { width:100%; box-sizing:border-box; text-align:left; }
+}
+@media only screen and (max-width:350px){
+	.cts1020 .training_event li {  width:98%;}
+	.cts1020 .training_event li .btn.download:after { float:right;}
+}
+
+/* 생활/환경 > 환경/쓰레기 > 생태경관보전지역 */
+.cts516 .img_area img {border:3px solid #c4df9b;}
+.cts516 .cont_box{width:600px;}
+
+/* 생활/환경 > 환경/쓰레기 > 음식물쓰레기 문전수거제 */
+.cts517 .box_text{font-size:16px;}
+
+/* 생활/환경 > 상수도사업소 > 사업소 소개 */
+.cts520 .waterworks{height:555px; background:url(/site/www/images/contents/cts520_bg.gif) bottom right no-repeat;}
+.cts520 .waterworks .cts_box {padding:65px 50px 0 53px;}
+.cts520 .waterworks .cts_box .tit{font-size:30px; line-height:35px; letter-spacing:0.025px;}
+.cts520 .waterworks .cts_box .tit strong{color:#156c83;}
+.cts520 .waterworks .cts_box p {font-size:16px; line-height:1.4em; letter-spacing:0.025px; line-height:25px;}
+
+
+@media only screen and (max-width:1000px){
+	.cts520 .waterworks { height:auto; padding-bottom:250px; background-color:#dcf5ff;  background-size:100% auto; word-break:keep-all;}
+}
+
+@media only screen and (max-width:640px){
+	.cts520 .waterworks { padding-bottom:180px; } 
+	.cts520 .waterworks .cts_box {padding:65px 5% 0;}
+}
+
+
+/* 태백소개 > 태백의 상징 > 시민헌장 */
+.cts394 .bgbox{border:#dfdfdf solid 1px; margin-top:50px; padding:9px;}
+.cts394 .bgbox .inner_bg{line-height:0; text-align:center;}
+
+/* 태백소개 > 시청안내 > 행정조직안내 */
+.organization{position:relative;}
+.organization ul li.organ_depth0_li .mayorbox{width:182px; margin:auto; background-repeat:no-repeat; background-position:center center; background-image:url(/site/www/images/contents/cts399_organization_mayorbox.png);}
+.organization ul li.organ_depth0_li .mayorbox p.table-cell{display:table-cell; width:182px; height:158px; text-align:center; vertical-align:middle; color:#FFF; font-size:40px; font-weight:600;}
+
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li{background-repeat:repeat-y; background-position:center top; background-image:url(/site/www/images/contents/cts399_organization_line.gif);}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list01{padding-top:49px;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .listbox.depth1_box{position:absolute; top:158px; right:50%; padding-right:108px; background-repeat:repeat-x; background-position:right center; background-image:url(/site/www/images/contents/cts399_organization_line.gif);}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .listbox.depth1_box p.table-cell{display:table-cell; width:156px; height:56px; text-align:center; vertical-align:middle; background-color:#00a99d; background-repeat:repeat; background-image:url(/site/www/images/contents/cts399_organization_listbox_pattern.png); color:#FFF; font-size:18px; font-weight:600;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .deputybox{width:164px; margin:0 auto 23px; background-repeat:no-repeat; background-image:url(/site/www/images/contents/cts399_organization_deputybox.png);}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .deputybox p.table-cell{display:table-cell; width:164px; height:142px; text-align:center; vertical-align:middle; color:#FFF; font-size:30px; font-weight:600;}
+
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap{background-color:#FFF; margin-bottom:30px;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li{float:left; width:17.28%; min-height:313px; margin-bottom:50px; padding-right:3.4%;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(5n){padding-right:0;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(1){padding-top:27px; background-repeat:no-repeat; background-position:calc(50% + 77px) top; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_left.png);}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(2){min-height:356px; padding-top:27px; background-repeat:no-repeat; background-position:calc(50% - 15px) top; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_center.png);}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(3){padding-top:27px; background-repeat:no-repeat; background-position:calc(50% - 15px) top; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_center.png);}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(4){min-height:356px; padding-top:27px; background-repeat:no-repeat; background-position:calc(50% - 15px) top; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_center.png);}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(5){padding-top:27px; background-repeat:no-repeat; background-position:calc(50% - 93px) top; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_right.png);}
+
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li .listbox{background-color:#456dc7; background-repeat:repeat; background-image:url(/site/www/images/contents/cts399_organization_listbox_pattern.png); margin-bottom:5px;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li .listbox a{ display:block; line-height:24px; padding:13px 0; text-align:center; color:#FFF; font-size:18px; font-weight:600;}
+
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li ul.organ_depth3_ul li{border:#dcdcdc solid 1px; line-height:22px; margin-bottom:3px; padding:8px 0; text-align:center; color:#444444; font-size:16px; font-weight:600;}
+
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02{ margin-bottom:100px;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li ul.organ_depth2_ul{background-color:#FFF;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul{width:372px; margin:auto;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li .listbox.depth1_box{ background-repeat:repeat; background-image:url(/site/www/images/contents/cts399_organization_listbox_pattern.png);}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list01 .listbox.depth1_box{ background-repeat:repeat-x; background-position:right center; background-image:url(/site/www/images/contents/cts399_organization_line.gif);}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 .listbox.depth1_box{width:226px; margin:0 auto 25px; background-color:#662d91;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li .listbox.depth1_box p.table-cell{display:table-cell; width:226px; height:70px; text-align:center; vertical-align:middle; color:#FFF; font-size:30px; font-weight:600;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list01 .listbox.depth1_box p.table-cell{width:156px; height:50px; font-size:18px;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul li.organ_depth2_li{float:left; width:156px; padding:27px 15px 0; background-repeat:no-repeat; text-align:center;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul li.organ_depth2_li:first-child{background-image:url(/site/www/images/contents/cts399_organ_depth2_li_left.png); background-position:calc(50% + 92px) top;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul li.organ_depth2_li:last-child{background-image:url(/site/www/images/contents/cts399_organ_depth2_li_right.png); background-position:calc(50% - 92px) top;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li ul.organ_depth2_ul li.organ_depth2_li .listbox.depth2_box{ background-repeat:repeat; background-image:url(/site/www/images/contents/cts399_organization_listbox_pattern.png); margin-bottom:5px;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul li.organ_depth2_li .listbox.depth2_box{background-color:#8560a8;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li ul.organ_depth2_ul li.organ_depth2_li .listbox.depth2_box a{display:block; padding:13px 0; line-height:24px; color:#FFF; font-size:18px; font-weight:600;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li ul.organ_depth2_ul li.organ_depth2_li ul li{border:#dcdcdc solid 1px; line-height:22px; margin-bottom:3px; padding:8px 0; color:#444444; font-size:16px; font-weight:600;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03{margin-bottom:100px;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 .listbox.depth1_box{width:226px; margin:0 auto 25px; background-color:#076760;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li .listbox.depth2_box{background-color:#0b8f86;}
+
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li{float:left; width:17.28%; padding:27px 3.4% 0 0; background-repeat:no-repeat; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_center.png); background-position:calc(50% - 15px) top; text-align:center;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li:first-child{background-image:url(/site/www/images/contents/cts399_organ_depth2_li_left.png); background-position:calc(50% + 77px) top;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li:last-child{padding:27px 0 0; background-image:url(/site/www/images/contents/cts399_organ_depth2_li_right.png); background-position:calc(50% - 93px) top;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li .listbox.depth2_box a{font-size:16px;}
+
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04{padding-left:79px; background-image:none;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left{float:left; width:372px; margin-right:100px; background-repeat:repeat-y; background-position:center top; background-image:url(/site/www/images/contents/cts399_organization_line.gif);}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left .listbox.depth1_box{width:226px; margin:0 auto 25px; background-color:#73a134;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .listbox.depth1_box p.table-cell span{color:#cbeaa1; font-size:18px;}
+
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li{float:left; width:156px; margin-bottom:3px; padding:0 15px; background-repeat:no-repeat; text-align:center;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li:first-child{background-image:url(/site/www/images/contents/cts399_organ_depth2_li_left.png); background-position:calc(50% + 92px) top; padding:27px 15px 0;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li:nth-child(2){background-image:url(/site/www/images/contents/cts399_organ_depth2_li_right.png); background-position:calc(50% - 92px) top; padding:27px 15px 0;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li .listbox{border:#dcdcdc solid 1px; line-height:22px; padding:8px 0; color:#444; font-size:16px; font-weight:600;}
+
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .right{float:left; width:226px; background-repeat:repeat-y; background-position:center top; background-image:url(/site/www/images/contents/cts399_organization_line.gif);}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .right .listbox.depth1_box{width:226px; margin-bottom:52px; background-color:#b64c4c;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .right ul.organ_depth2_ul li .listbox.depth2_box{width:156px; margin:auto; background-color:#de7979; background-repeat:repeat; background-image:url(/site/www/images/contents/cts399_organization_listbox_pattern.png);}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .right ul.organ_depth2_ul li .listbox.depth2_box p.table-cell{display:table-cell; width:156px; height:50px; text-align:center; vertical-align:middle; color:#FFF; font-size:18px; font-weight:600;}
+
+@media only screen and (max-width:1000px){
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04{padding-left:0;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left{float:none; margin:0 auto 100px;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .right{float:none; margin:0 auto;}
+}
+
+
+@media only screen and (max-width:640px){
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03{background-image:none;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap{padding-top:27px;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li{width:48.5%; padding-right:3%; background-image:none !important; padding-top:0 !important; min-height:0 !important;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(5n){padding-right:3%;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .organ_depth2_wrap ul li.organ_depth2_li:nth-child(even){padding-right:0;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .deputybox{margin:0 auto;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li{width:48.5%; margin-bottom:30px; padding-right:3%; background-image:none !important; padding-top:0 !important;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list03 ul.organ_depth2_ul li.organ_depth2_li:nth-child(even){padding-right:0;}
+}
+
+@media only screen and (max-width:480px){
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list01{padding-top:97px;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .listbox.depth1_box{top:181px; padding-right:10%;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul{width:auto;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list02 ul.organ_depth2_ul li.organ_depth2_li{width:48%; padding:27px 1% 0;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left{width:auto;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li{width:48%; padding:0 1%;}
+.organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li:first-child, .organization ul li.organ_depth0_li ul.organ_depth1_ul li.organ_depth1_li.list04 .left ul.organ_depth2_ul li.organ_depth2_li:nth-child(2){padding:27px 1% 0;}
+}
+
+/* 태백소개 > 시청안내 > 찾아오시는 길 */
+.cts402 .location{background-repeat:no-repeat; background-position:48px top; background-image:url(../images/contents/cts402_icon.png); padding-left:179px;}
+
+@media only screen and (max-width:640px){
+.cts402 .location{background-position:center top; padding:100px 0 0;}
+}
+
+/* 태백소개 > 교류협력 > 국제자매도시 > 중국 허룽시 (공통) */
+.international_city_imagebox{text-align:center; font-size:0;}
+.international_city_imagebox span.listbox{display:inline-block; margin:0 10px 20px; vertical-align:top;}
+.international_city_imagebox span.listbox .photobox{display:inline-block; border:#dfdfdf solid 1px; margin-bottom:7px; padding:9px; line-height:0;}
+.international_city_imagebox span.listbox span.text{display:block; line-height:20px; color:#444444; font-size:15px; font-weight:600;}
+
+/* 태백소개 > 교류협력 > 관학협력체결 */
+.cts421_box{position:relative; min-height:200px; padding-left:334px;}
+.cts421_box .logobox{position:absolute; top:0; left:0; border:#dfdfdf solid 1px; padding:9px;}
+.cts421_box .logobox .innerbox{display:table-cell; width:280px; height:180px; background-color:#f5f5f5; text-align:center; vertical-align:middle;}
+.cts421_box ul.bu{margin:0; padding:0;}
+
+@media only screen and (max-width:640px){
+.cts421_box{padding-left:0;}
+.cts421_box .logobox{position:static; width:280px; margin:0 auto 30px;}
+}
+
+/* 정보공개 > 행정정보 > 지방재정공시 (차트공통) */
+.cts291_chartbox{background-repeat:repeat; background-image:url(../../../common/images/sub/box_pattern.png); margin:50px 0; padding:6px;}
+.cts291_chartbox .innerbox{background-color:#FFF; padding:45px 30px 40px;}
+.cts291_chartbox .innerbox h4{margin:0 0 18px; padding:0; line-height:32px; text-align:center; color:#000; font-size:25px;}
+.cts291_chartbox .innerbox h4:before{display:none;}
+.cts291_chartbox .innerbox h4 span{color:#7d7d7d; font-size:20px;}
+.cts291_chartbox .innerbox .imagebox{position:relative; text-align:center; line-height:0;}
+.cts291_chartbox .innerbox .imagebox a{position:absolute; right:0; bottom:0; display:none; line-height:25px; padding:5px 10px; background-color:rgba(0, 0, 0, 0.7); color:#FFF; font-size:15px;}
+.cts291_chartbox .innerbox .imagebox a i{ display:inline-block; width:25px; height:25px; margin:0 10px 0 0; background-repeat:no-repeat; background-position:0 -200px; background-image:url(../../../common/images/board/bbs_icon.png); vertical-align:middle;}
+.cts291_chartbox .innerbox p.explain{ margin-top:32px; line-height:22px; text-align:center; color:#f26522; font-size:14px; font-weight:600;}
+
+@media only screen and (max-width:1000px){
+.cts291_chartbox .innerbox .imagebox a{display:block;}
+}
+
+@media only screen and (max-width:640px){
+.cts291_chartbox .innerbox{padding:45px 4% 40px;}
+}
+
+/* 분야별정보 > 생활/환경 > 수질환경사업소 > 사업소 소개 */
+.cts524 .greeting{background-color:#dcf5ff; background-repeat:no-repeat; background-position:left bottom; background-image:url(../images/contents/cts524_bg.png); padding:69px 292px 240px 53px;}
+.cts524 .greeting .welcome{margin-bottom:16px; line-height:36px; color:#444444; font-size:30px;}
+.cts524 .greeting .welcome span{color:#156c83; font-size:35px; font-weight:600;}
+.cts524 .greeting p{margin-top:22px; line-height:22px; color:#444444; font-size:15px; letter-spacing:-0.03em;}
+
+@media only screen and (max-width:1000px){
+.cts524 .greeting{background-size:contain; padding:69px 3% 240px;}
+}
+
+@media only screen and (max-width:800px){
+.cts524 .greeting p:nth-child(3){padding-right:34%;}
+.cts524 .greeting p:nth-child(3) br{display:none;}
+}
+
+@media only screen and (max-width:480px){
+.cts524 .greeting{padding:69px 3% 58%;}
+.cts524 .greeting p:nth-child(3){padding-right:0;}
+}
+
+/* 분야별정보 >  농정/산업 > 지역개발 > 탄광지역개발계획 추진현황 */
+.cts535_box{max-width:800px; margin:0 auto 20px; padding-top:57px; background-repeat:no-repeat; background-position:center top; background-image:url(../images/contents/cts535_arrow.png);}
+.cts535_box .roundbox{background-color:#375596; border-radius:63px; overflow:hidden;}
+.cts535_box .roundbox p.table-cell{display:table-cell; width:800px; height:63px; line-height:20px; text-align:center; vertical-align:middle; color:#FFF; font-size:17px; font-weight:600;}
+
+/* 분야별정보 >  농정/산업 > 지역개발 > 1단계 개발계획 추진상황 */
+.cts536 .cts535_box .roundbox p.table-cell span{color:#e2e2e2; font-size:14px;}
+
+/* 분야별정보 >  농정/산업 > 민자유치 단위사업현황 */
+.cts542 .box .box_wrap{text-align:center; line-height:0; padding:75px 20px;}
+.cts542 .tab_content .tabcon{display:none;}
+.cts542 .tab_content .tabcon.tabcon_1{display:block;}
+.cts542 .tab_content .photobox ul li{text-align:center;}
+.cts542 .tab_content .photobox ul li.left{float:left;width:49.8%;}
+.cts542 .tab_content .photobox ul li.right{float:right;width:49.2%;}
+.cts542 .tab_content .photobox ul li .photo{border:#dbdbdb solid 3px; margin-bottom:10px; line-height:0; text-align:right; overflow:hidden;}
+.cts542 .tab_content .photobox ul li .photo img{/*max-width:none; width:auto; height:240px;*/}
+.cts542 .tab_content .photobox ul li p{line-height:20px; color:#444; font-size:14px; font-weight:600;}
+
+@media only screen and (max-width:600px){
+.cts542 .tab_content .photobox ul li{width:auto; text-align:center;}
+.cts542 .tab_content .photobox ul li.left{float:none;width:auto; margin-bottom:20px;}
+.cts542 .tab_content .photobox ul li.right{float:none;width:auto;}
+.cts542 .tab_content .photobox ul li .photo{display:inline-block;}
+.cts542 .tab_content .photobox ul li .photo img{max-width:100%; width:auto; height:auto;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

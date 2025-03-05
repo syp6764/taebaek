@@ -1,0 +1,147 @@
+/* (주)한신정보기술 김예지 - 2017.07 */
+
+/* 상단 */
+#header{padding-bottom:54px;}
+.top_move .site_move li.on{width:160px;height:42px;background-color:#fff;font-size:16px;color:#4f4f4f;line-height:42px;}
+.logo{top:14px;left:50%;margin-left:-118px;}
+.logo a{display:inline-block;vertical-align:middle;}
+.logo .flog{margin-left:7px;}
+.taebaek_data{position:absolute;left:0;top:33px;}
+.taebaek_data a{display:inline-block;vertical-align:middle;}
+.taebaek_data .weather:hover{text-decoration:none;}
+.taebaek_data .weather img{vertical-align:middle;}
+.taebaek_data .weather .temperature{display:inline-block;margin:5px 8px 0 3px;font-size:43px;line-height:45px;color:#313131;font-weight:600;letter-spacing:-1px;vertical-align:middle;}
+.taebaek_data .data{color:#313131;font-weight:600;}
+.taebaek_data .data span{display:block;line-height:22px;}
+.taebaek_data .data .weathe_cont{font-size:17px;}
+.taebaek_data .data .weathe_cont em{font-size:25px;line-height:27px;color:#2a86d6;}
+.taebaek_data .data .unit em{color:#f26c4f;}
+#header .sns{position:absolute;right:0;top:25px;line-height:0;}
+#header .sns a{display:inline-block;width:49px;height:49px;background-repeat:no-repeat;font-size:0;}
+#header .sns .icon01{background-image:url('../images/common/sns01.png');}
+#header .sns .icon02{margin-left:7px;background-image:url('../images/common/sns02.png');}
+.search_wrap{position:relative;width:1200px;margin:0 auto;}
+.search button{position:absolute;right:0;top:110px;width:62px;height:55px;padding:0;background:#353a3e url('../images/common/search_btn.png') no-repeat 50%;font-size:0;line-height:0;z-index:40;}
+.search h2{padding-left:34px;margin:25px 0 22px;background:url('../images/common/search_title.png') no-repeat left center;font-size:30px;line-height:32px;color:#fff;}
+.search_box{display:none;position:absolute;right:0;top:165px;width:630px;background:url('../images/common/search_box_bg.gif') repeat;}
+.search_box .inner_box{padding:35px;padding-top:0;border:5px solid #353a3e;}
+.search form{position:relative;padding-right:100px;}
+.search select,.search input{height:50px;padding:0;padding:0;margin:0;border:none;font-size:16px;line-height:50px;}
+.search select{width:24%;margin-right:0.3%;font-size:18px;}
+.search input[type="search"]{width:74.8%;}
+.search input[type="submit"]{position:absolute;right:0;top:0;padding:0 28px;background-color:#4270d6;font-size:20px;color:#fff;}
+
+/* 메뉴 */
+.lnb_wrap{position:absolute;left:0;bottom:0;width:100%;}
+#lnb{position:relative;top:auto;z-index:30;border-top:1px solid #d0d0d0;}
+#lnb .wrap{position:static;}
+.top1menu{padding:0 62px 0 0;}
+#lnb ul li > div{display:none;}
+.depth1{float:left;width:16.666666%;}
+.depth1 a.depth1_tit{display:block;position:relative;padding:15px 0 16px;font-size:18px;line-height:22px;color:#1b1b1b;text-decoration:none;}
+.depth1 a.depth1_tit:before{display:block;position:absolute;left:0;top:50%;width:1px;height:18px;margin-top:-9px;background-color:#d0d0d0;vertical-align:middle;content:'';}
+.depth1.hover a.depth1_tit,.depth1 a.depth1_tit:hover{color:#5674b9;font-weight:600;}
+.top2m{display:none;position:absolute;left:0;top:53px;z-index:300;width:100%;border-bottom:1px solid #d0d0d0;background-color:#fff;}
+.depth2_wrap {position:relative;z-index:920;margin:0 auto;width:1010px;padding:0 0 0 190px;}
+.top2m.m1 .depth2_wrap,.depth2_wrap{border:none;}
+.top2m .tit_area{position:absolute;left:-15px;top:0;width:190px;height:100%;padding-left:15px;background:url('../images/common/lnb_bg.gif') no-repeat left bottom;}
+.top2m .tit_area .tit{display:block;margin-top:44px;font-size:35px;line-height:40px;color:#4163b0;font-weight:600;letter-spacing:-1px;text-align:left;}
+.depth2{min-height:auto;margin:0;padding:0;}
+.depth2 > li{position:relative;min-height:45px;padding-left:190px;border-top:1px solid #d0d0d0;border-right:1px solid #d0d0d0;background-color:#fff;}
+.depth2 > li > a:hover{background:#4163b0 none;font-weight:normal;}
+.depth2 .depth2_tit{position:absolute;left:0;top:-1px;width:190px;height:100%;padding:1px 0 0;border-top:1px solid #6782c0;background-color:#4163b0;color:#fff;font-size:16px;/*box-sizing:border-box;*/}
+.depth2 .depth2_tit:hover{color:#fff;}
+.depth2 .depth2_tit:hover span{text-decoration:underline;}
+.depth2 .depth2_tit > i{display:inline-block;height:100%;line-height:100%;vertical-align:middle;}
+.depth2 .depth2_tit span{display:inline-block;padding:0 0 0 25px;vertical-align:middle;}
+.depth2 i.blank{display:inline-block;width:21px;height:17px;margin-left:5px;background:url('/common/images/sub/template.png') no-repeat left top;vertical-align:middle;}
+.depth2 .depth2_tit i.blank{background-position:-40px top;}
+.depth3{display:block;width:819px;padding:9px 0 13px;}
+.depth3 > li{float:left;width:20%;padding-top:5px;}
+.depth3 > li > a{display:block !important;padding:0 0 0 25px;background:url('../images/common/deth3_bu.gif') no-repeat 14px 6px;font-size:14px;line-height:18px;color:#000;text-align:left;letter-spacing:-1px;}
+.depth3 > li > a:hover{background:url('../images/common/deth3_bu.gif') no-repeat 14px 6px;color:#000;font-weight:normal;}
+.depth3 ul{display:none;} /* 4차메뉴 숨김 */
+
+#lnb ul ul li.split_line{float:none;width:100%;padding:0;}
+
+.reactive_form .mask{position:absolute;left:0;top:55px;width:100%;height:1000px;background:url('/common/images/layout/mask.png') repeat;}
+
+/* 하단 */
+.wa{display:block;position:absolute;top:50px;right:2px;height:74px;}
+@media only screen and (max-width:1000px) {
+	/* 상단 */
+	#header{padding-bottom:0;}
+	.top_move .site_move li.on{width:33.333333%;}
+	.taebaek_data,#header .sns{display:none;}
+	.search_wrap{width:768px;}
+	.search button{top:30px;width:52px;height:52px;z-index:7;}
+	.search_box{top:82px;z-index:5;}
+	
+	/* 메뉴 */
+	#lnb{border:none;}
+	.lnb_wrap{position:static;width:auto;left:auto;bottom:auto;}
+	.reactive_form .mask{position:fixed;top:0;left:0;height:100%;}
+	.reactive_form .lnb_m_nav{position:relative;right:auto;}
+	.reactive_form .lnb_m_nav .open{display:block;position:absolute;top:30px;left:0;z-index:8;}
+	.reactive_form #lnb{right:auto;left:-300px;}
+	.top1menu{padding:0;}
+	.depth1{text-align:left;}
+	.depth1 a.depth1_tit:before{display:none;}
+	.top2m{position:static;background:none;}
+	.top2m div{padding:0;}
+	.depth2_wrap{width:auto;}
+	.top2m .tit_area{display:none;}
+	.depth2 > li{padding:0;border-right:none;background:transparent;}
+	.depth2 .depth2_tit{position:static;border:none;}
+	.depth2 .depth2_tit span{padding:0;}
+	.depth3{width:auto;border:none;}
+	.depth3 li{float:none;width:100%;padding:0;}
+	.reactive_form .depth2 .depth4{padding:7px 0 7px 20px;}
+	.reactive_form .depth2 .depth4 a{padding:0;background:none !important;}
+	.reactive_form .depth4 a:before{display:inline-block;width:3px;height:3px;margin-right:7px;background-color:#3b5fae;vertical-align:middle;content:'';}
+
+	/* 하단 */
+	#footer .footer_info{text-align:left;}
+	.wa{top:30px;}
+}
+@media only screen and (max-width:800px) {
+	/* 상단 */
+	.search_wrap{width:640px;}
+	.search_box{width:100%;}
+
+	/* 하단 */
+	.footer_info .number{display:block;margin-left:0 !important;}
+}
+@media only screen and (max-width:640px) {
+	/* 상단 */
+	.reactive_form .logo{left:50%;top:22px;}
+	.logo{margin-left:-96px;}
+	.logo .flog{margin-top:2px;}
+	.reactive_form .logo .flog img{width:55px;}
+	.reactive_form .gnb.mobile_gnb{right:auto;left:0;}
+	.search_wrap{width:100%;}
+	.search button{right:1.8%;}
+	.search_box .inner_box{padding:0 30px 20px;}
+	.search h2{margin:15px 0;font-size:22px;}
+	.search form{text-align:center;}
+	.search select, .search input{vertical-align:top;}
+	.search select{width:25%;}
+	.search input[type="search"]{width:50%;}
+	/*.search input[type="submit"]{width:20%;padding:0;}*/
+
+	/* 메뉴 */
+	.reactive_form .lnb_m_nav .open{left:1.8%;}
+
+	/* 하단 */
+	.wa{top:10px;}
+}
+@media only screen and (max-width:414px) {
+	/* 상단 */
+	.search select, .search input{height:38px;line-height:38px;font-size:16px;}
+	.search select{width:35%;}
+	.search input[type="search"]{width:60%;margin-bottom:10px;}
+	/*.search input[type="submit"]{width:96%;font-size:16px;}*/
+
+	/* 하단 */
+	.wa{position:static;width:113px;margin:10px auto 0;}
+}

@@ -1,0 +1,611 @@
+@charset "UTF-8";
+
+
+/*  재난/안전 > 민방위 > 민방위란? */
+.box.type3.simple_img_box .simple_img.cts580_icon{width:93px;height:73px;background:url(../images/contents/cts580.gif) no-repeat left 10px;color:transparent;font-size:1px;}
+
+
+/* 홈 > 정보공개 > 정보공개제도 > 행정정보공개제도 */
+
+.cts196 .process { width:650px; margin:0 auto; word-break:keep-all;}
+.cts196 .process .cell { margin-bottom:30px;}
+.cts196 .process .cell p.tit { margin-bottom:10px; padding:15px 5%; background:url(../images/contents/cts196_titbg.gif) repeat; font-size:20px; color:#fff;  line-height:22px; text-align:center;}
+.cts196 .process .cell .text { padding:25px; border:1px solid #d0d0d0; }
+.cts196 .process .cell ul li { padding-left:15px; background:url(../images/contents/cts196_bu.gif) no-repeat left 9px; }
+.cts196 .process .cell ul li li { padding-left:20px;  background:url(../images/contents/cts196_bu2.gif) no-repeat left 8px;}
+.cts196 .process .cell.last ul li { margin-bottom:20px;} 
+.cts196 .process .cell.last ul li li { margin-bottom:0;}
+
+@media only screen and (max-width:800px) {
+	.cts196 .process { width:85%;}
+}
+@media only screen and (max-width:640px) {
+	.cts196 .process { width:95%;}
+}
+
+/* 홈 정보공개 행정정보 시정방향 
+
+	-cts1058_ 형식으로 시작하는것은 다른곳에도 공통으로 사용하는것임. 뿌리가 cts1058 에서 시작임.
+	사용 페이지 : 시정방향 하위메뉴 전체  */
+
+.taebaek_vision { width:790px; margin:0 auto; word-break:keep-all;}
+.taebaek_vision h3 { position:relative; margin-bottom:50px; padding-top:20px; font-size:50px; color:#000; font-weight:600; text-align:center; line-height:55px;}
+.taebaek_vision h3:before { content:''; display:inline-block; position:absolute; left:50%; top:10;  width:38px; height:1px; margin-left:-19px; background:#000; }
+.taebaek_vision .blue_text {max-width:790px; margin:0 auto; padding:20px 0 15px; background:url(/site/www/images/contents/vision_bluebox.gif) no-repeat center; border-radius:50px; text-align:center;} 
+.taebaek_vision .arrow { margin:30px 0;  height:52px; background:url(/site/www/images/contents/vision_arrow.gif) no-repeat center top;}
+.taebaek_vision ul.round_dot { text-align:center; /*font-family:NanumG;*/}
+.taebaek_vision ul.round_dot li { display:inline-block;  width:164px; height:164px; margin: 10px; font-size:20px; color:#fff; text-align:center; }
+.taebaek_vision ul.round_dot li.color1 {background:url(/site/www/images/contents/vision_round_dot1.gif) no-repeat center;}
+.taebaek_vision ul.round_dot li.color2 {background:url(/site/www/images/contents/vision_round_dot2.gif) no-repeat center;}
+.taebaek_vision ul.round_dot li.color3 {background:url(/site/www/images/contents/vision_round_dot3.gif) no-repeat center;}
+.taebaek_vision ul.round_dot li  span strong { display:block; font-size:30px; line-height:32px; letter-spacing:-2px;}
+.taebaek_vision ul.round_dot li:before { content:""; display:inline-block; vertical-align:middle; height:100%; }
+.taebaek_vision ul.round_dot li > span { max-width:100%; max-height:100%; display:inline-block; vertical-align:middle; font-weight:600;}
+.taebaek_vision .green_text {  max-width:790px; margin:0 auto; padding:20px 0 15px; background:url(/site/www/images/contents/vision_greenbox.gif) no-repeat center; border-radius:50px; text-align:center;} 
+.taebaek_vision ul.round_solid { margin:20px 0 0 -10px;}
+.taebaek_vision ul.round_solid li { float:left; width:390px; margin:5px 0 5px 10px; padding:10px;  border:3px solid #dbdbdb; border-radius:30px;  box-sizing:border-box; letter-spacing:-1px; }
+.taebaek_vision h4.tit { margin:10px 0 15px; font-size:35px; font-weight:600; color:#3f3f3f; text-align:center; line-height:40px;}
+.taebaek_vision .list_box h4 { background:#05554f; border-radius:30px; font-size:18px; color:#fff; text-align:center; line-height:44px;}
+
+@media only screen and (max-width:800px) {
+	.taebaek_vision { max-width:790px; width:100%;}
+	.taebaek_vision img { max-width:90%;}
+	.taebaek_vision ul.round_solid { margin-left:0;}
+	.taebaek_vision ul.round_solid li { width:100%; margin-left:0; padding:10px 5%;}
+
+}
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2015  */
+.cts213 .list_area { margin-top:20px;}
+.cts213 .list_area .list_box { float:left;  width:250px; margin-left:20px; }
+.cts213 .list_area .list_box:first-child { margin-left:0;} 
+
+.cts213 .list_area .list_box ul { height:145px; margin-top:5px; padding:20px;  border:3px solid #dbdbdb; border-radius:20px;  box-sizing:border-box;}
+.cts213 .list_area .list_box ul li { position:relative;  padding:3px 0 3px 25px; color:#444; line-height:20px;}
+.cts213 .list_area .list_box ul li span { display:block;  position:absolute; left:0; top:5px; width:16px; height:16px; background-color:#707070; border-radius:20px; 
+													font-size:13px;  color:#fff; text-align:center; line-height:17px; }
+
+@media only screen and (max-width:800px) {
+	.cts213 .list_area .list_box {  width:100%; margin:0 0 10px; }
+	.cts213 .list_area .list_box ul  { height:auto;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2014 민선5기  */
+.cts211 .cts1058_vision { width:810px;} 
+.cts211 h4.tit { margin:10px 0 15px; font-size:35px; font-weight:600; color:#3f3f3f; text-align:center;}
+.cts211 .cts1058_vision ul.round_dot li.color3 strong { font-size:23px }
+.cts211 .list_area { margin-top:20px;}
+
+.cts211 .list_area .list_box ul { height:205px; margin-top:5px;  border-radius:20px;  box-sizing:border-box; }
+.cts211 .list_area .list_box.type1 { float:left;  width:200px; }
+.cts211 .list_area .list_box.type1 ul { background-color:#1f7b74;}
+.cts211 .list_area .list_box.type1 ul li {border-top:1px solid #368882; font-size:24px; color:#fff; text-align:center;  line-height:66px;}
+.cts211 .list_area .list_box.type1 ul li:first-child { border:none;} 
+.cts211 .list_area .list_box.type2 { float:right; width:595px;}
+.cts211 .list_area .list_box.type2 ul {  padding:20px 10px;   border:3px solid #dbdbdb; }
+.cts211 .list_area .list_box.type2 ul li { position:relative;   padding:3px 0 3px 25px; color:#444; line-height:20px;}
+.cts211 .list_area .list_box.type2 ul li span { display:block;  position:absolute; left:0; top:5px; width:16px; height:16px; background-color:#707070; border-radius:20px; 
+													font-size:13px;  color:#fff; text-align:center; line-height:17px; }
+
+@media only screen and (max-width:810px) {
+	.cts211 .cts1058_vision { width:100%;} 
+	.cts211 .list_area .list_box { float:none !important; width:100% !important; margin-bottom:15px;}
+	.cts211 .list_area .list_box ul { height: auto;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2014 민선6기  */
+
+.cts212 h4.tit { margin:10px 0 15px; font-size:35px; font-weight:600; color:#3f3f3f; text-align:center;}
+.cts212 .list_area { margin-top:20px;}
+.cts212 .list_area .list_box { float:left;  width:250px; margin-left:20px; }
+.cts212 .list_area .list_box:first-child { margin-left:0;} 
+.cts212 .list_area .list_box .text  { height:145px; margin-top:5px; padding:20px;  border:3px solid #dbdbdb; border-radius:20px;  box-sizing:border-box;}
+.cts212 .list_area.type1 .list_box h4 { background-color:#487dc6;}
+.cts212 .list_area.type1 .list_box .text { text-align:center;  line-height:20px;}
+.cts212 .list_area.type1 .list_box .text:before { content:""; display:inline-block; vertical-align:middle; height:100%; }
+.cts212 .list_area.type1 .list_box .text > p { max-width:100%; max-height:100%; display:inline-block; vertical-align:middle; }
+
+.cts212 .list_area.type2 .list_box h4 { letter-spacing:-1px;}
+.cts212 .list_area.type2 .list_box ul li { position:relative;  padding:3px 0 3px 25px; color:#444; line-height:20px;}
+.cts212 .list_area.type2 .list_box ul li span { display:block;  position:absolute; left:0; top:5px; width:16px; height:16px; background-color:#707070; border-radius:20px; 
+													font-size:13px;  color:#fff; text-align:center; line-height:17px; }
+
+@media only screen and (max-width:800px){
+	.cts212 .list_area .list_box { width:100%; margin:0 0 10px;}
+	.cts212 .list_area .list_box .text { height:auto;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2013 */
+.cts209 .cts1058_vision ul.round_dot li.color3 strong { font-size:23px }
+.cts209 .green_list { float:left; width:200px; height:180px; background-color:#1f7b74;  border-radius:20px;  box-sizing:border-box;}
+.cts209 .green_list li {border-top:1px solid #368882; font-size:24px; color:#fff; text-align:center;  line-height:59px;}
+.cts209 .green_list li:first-child { border:none;} 
+.cts209 .plus { float:left; overflow:hidden; width:80px; height:180px;  background:url(../images/contents/cts209_plus.png) no-repeat center; text-indent:120%; white-space:nowrap; }
+.cts209 .border_list  { float:right; width:510px; height:180px; margin:0;  padding:20px;  border:3px solid #dbdbdb; border-radius:20px;  box-sizing:border-box; }
+
+@media only screen and (max-width:800px){
+	.cts209 .green_list { width:100%; height:auto;}
+	.cts209 .plus { width:100%; height:80px;}
+	.cts209 .border_list  {width:100%; height:auto;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2012 */
+.cts208 .cts1058_vision ul.round_dot li.color3 strong { font-size:23px }
+.cts208 .cts1058_vision .green_text { font-size:38px; font-weight:600; color:#fff; line-height:45px }
+.cts208 .cts1058_vision .green_text img { vertical-align:middle;}
+.cts208 .cts1058_vision ul.round_dot.type2 {width:80%; margin:20px auto;}
+.cts208 .cts1058_vision ul.round_dot.type2 li {background:url(../images/contents/cts208_round_dot.gif) no-repeat; }
+.cts208 .cts1058_vision ul.round_dot.type2 li:nth-child(even) {background-position:right top;}
+
+@media only screen and (max-width:640px){
+	.cts208 .cts1058_vision ul.round_dot.type2 {width:100%; }
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2011 */
+.cts207 .cts1058_vision { width:100%;}
+.cts207 h4.tit em { color:#487dc6;}
+.cts207 .green_text { font-size:38px; font-weight:600; color:#fff; line-height:45px }
+.cts207 ul.round_dot { margin-top:15px;}
+.cts207 ul.round_dot li { margin:10px 5px; background:url(../images/contents/cts208_round_dot.gif) no-repeat; letter-spacing:-1px;}
+.cts207 ul.round_dot li:nth-child(2),.cts207 .cts1058_vision ul.round_dot.type2 li:nth-child(4) {background-position:right top;}
+
+.cts207 .list_area { width:790px; margin:30px auto 0;}
+.cts207 .list_area .list_box { float:left;  width:300px; }
+.cts207 .list_area .list_box.type2 { float:right;}
+.cts207 .list_area .list_box h4 { background-color:#487dc6; }
+.cts207 .list_area .list_box ul  { height:96px;; margin-top:5px; padding:20px;  border:3px solid #dbdbdb; border-radius:20px;  box-sizing:border-box;}
+
+@media only screen and (max-width:800px){
+	.cts207 .list_area { width:100%;}
+}
+@media only screen and (max-width:640px){
+	.cts207 .list_area .list_box {   width:100%;}
+	.cts207 .list_area .list_box.type2 { margin-bottom:20px; } 
+	.cts1058_vision .green_text { font-size:30px;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2010 */
+.cts206 .cts1058_vision ul.round_dot li.color3 strong { font-size:23px }
+.cts206 ul.round_dot.type2  { width:80%; margin:0 auto;}
+.cts206 ul.round_dot.type2  li { margin:10px 5px; background:url(../images/contents/cts208_round_dot.gif) no-repeat; letter-spacing:-1px;}
+.cts206 ul.round_dot.type2  li:nth-child(even){background-position:right top;}
+@media only screen and (max-width:800px){
+	.cts206 ul.round_dot.type2  { width:100%;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2009/2008과 동일 */
+.cts205 ul.round_dot.type2  { width:80%; margin:0 auto;}
+.cts205 ul.round_dot.type2  li { margin:10px 5px; background:url(../images/contents/cts208_round_dot.gif) no-repeat; letter-spacing:-1px;}
+.cts205 ul.round_dot.type2  li:nth-child(even){background-position:right top;}
+
+@media only screen and (max-width:800px){
+	.cts205 ul.round_dot.type2  { width:100%;}
+}
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2009/2008과 동일 */
+.cts204 ul.round_dot.type2  { width:80%; margin:0 auto;}
+.cts204 ul.round_dot.type2  li { margin:10px 5px; background:url(../images/contents/cts208_round_dot.gif) no-repeat; letter-spacing:-1px;}
+.cts204 ul.round_dot.type2  li:nth-child(even){background-position:right top;}
+
+@media only screen and (max-width:800px){
+	.cts204 ul.round_dot.type2  { width:100%;}
+}
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2007 */
+.cts203 ul.round_dot.type2  li { margin:10px 5px; background:url(../images/contents/cts208_round_dot.gif) no-repeat right top; letter-spacing:-1px;}
+.cts203 ul.round_dot.type2  li:nth-child(even){background-position:left top;}
+
+/*  홈 > 정보공개 > 행정정보 > 시정방향 > 2006 */
+.cts202 .cts1058_vision { margin-bottom:30px;}
+.cts202 .list_box .text {  margin-top:10px; padding:20px 10px; border:3px solid #dbdbdb; border-radius:30px;   }
+.cts202 .list_box ul { width:65%; margin:0 auto; }
+.cts202 .list_box ul li { position:relative;   padding:3px 0 3px 25px; color:#444; line-height:20px;}
+.cts202 .list_box ul li span { display:block;  position:absolute; left:0; top:5px; width:16px; height:16px; background-color:#707070; border-radius:20px; 
+													font-size:13px;  color:#fff; text-align:center; line-height:17px; }
+@media only screen and (max-width:640px){
+	.cts202 .list_box ul { width:90%; }
+}
+
+/* 홈 > 정보공개 > 행정정보 > 태백시 인구늘리기 > 중장기 전략 */
+.cts230 { word-break:keep-all;}
+.cts230 p.title { font-size:40px; font-weight:normal; text-align:center; line-height:50px;}
+.cts230 p.title em { color:#4a77ab;}
+.cts230 p.title:before {content:''; display:block; height:27px; margin:25px 0; background:url(../images/contents/cts230_titbg.gif) no-repeat center top;}
+.cts230 p.title:after {content:''; display:block; height:27px; margin:25px 0; background:url(../images/contents/cts230_titbg.gif) no-repeat center bottom;}
+.cts230 .box .tit_area { padding:40px 0; text-align:center; line-height:30px;}
+.cts230 .box .tit_area p.tit { font-size:25px;  color:#000; }
+.cts230 .box .tit_area p.text { margin-top:10px; font-size:20px; color:#7d7d7d;}
+.cts230 .box ul li { float:left; width:48%; height:430px;  padding:0 1%; text-align:center; line-height:430px; }
+.cts230 .box ul li img { max-width:100%; max-height:100%; vertical-align:middle; }
+
+@media only screen and (max-width:640px){
+	.cts230 .box ul li { width:100%; padding:15px  0 ;}
+}
+
+/*  홈 > 정보공개 > 행정정보 > 예산현황 > 2016  
+
+	-cts270_ 형식으로 시작하는것은 다른곳에도 공통으로 사용하는것임. 뿌리가 cts270 에서 시작임.
+	사용 페이지 : 예산현황 하위메뉴 전체  
+	
+	group_5 : 5개의 .cell 그룹핑
+	group_4 : 4개의 .cell 그룹핑
+	group_2 : 2개의 .cell  그룹핑
+	*/
+
+.cts270_group .cell  { float:left; }
+.cts270_group .img_area { margin:30px 0; text-align:center;}
+.cts270_group .img_area img { max-width:100%;}
+.cts270_group .group_5 .cell { width:18%; margin:0 1%;}
+.cts270_group .group_4 .cell { width:23%; margin:0 1%;}
+.cts270_group .group_2 .cell { width:49%; margin-left:2%;}
+.cts270_group .group_2 .cell:first-child { margin-left:0;}
+
+@media only screen and (max-width:640px){
+	.cts270_group .cell  { float:none; width:100% !important; margin:0 0 20px !important; }
+}
+
+
+
+/*   홈 > 정보공개 > 행정정보 > 지방재정공시 > 2016  
+
+	-cts294_ 형식으로 시작하는것은 다른곳에도 공통으로 사용하는것임. 뿌리가 cts294 에서 시작임.
+	사용 페이지 : 예산현황 하위메뉴 전체  
+*/
+
+.cts294_tit { padding:40px 0; text-align:center; line-height:30px;}
+.cts294_tit  p.tit { font-size:25px;  color:#000; }
+.cts294_tit  p em { font-size:20px; color:#7d7d7d;}
+.cts294_graph .img_area { margin:20px 0; text-align:center;}
+.cts294_box { margin:10px 0; padding:10px 20px; background:#fafafa; border:1px solid #e9e9e9;}
+
+/* 홈 >정보공개 > 행정규제개혁 > 행정규제신고센터 */
+.cts312 .simple_img {width:73px; height:67px;background-image:url("../images/contents/cts312_icon.gif")}
+
+/*  홈 > 정보공개 > 시정백서  */
+.cts314 .simple_img {width:67px; height:69px;background-image:url("../images/contents/cts314_icon.gif")}
+.cts314 ul li { float:left; position:relative; width:40%; margin:0 5%; padding:10px 0; border-bottom:1px dashed #ddd;}
+.cts314 ul li:before { display:inline-block;  width:7px; height:7px;}
+.cts314 ul li .btn { position:absolute; right:0; top:5px;}
+
+@media only screen and (max-width:800px){
+	.cts314 ul li {  width:90%; }
+}
+@media only screen and (max-width:414px){
+	.cts314 ul li .btn { position:static;}
+}
+
+
+/*  홈 > 소통참여 > 신고센터 > 공직원부조리신고  */
+.cts325 .simple_img {width:73px; height:73px;background-image:url("../images/contents/simple_icon.gif");}
+.cts325 .simple_img_box .btn_area { display:block;  margin-top:20px;}
+.cts325 .simple_img_box .btn_area a { margin:2px 0;}
+
+/*  홈 > 소통참여 > 신고센터 > 안전신문고 > 재난안전제보  */
+.cts327 .box { text-align:center; word-break:keep-all;}
+.cts327 .safe1 .box_wrap div {display:inline-block; margin:0 20px; vertical-align:middle; }
+.cts327 .safe1 .text_area { width:500px;text-align:left; } 
+.cts327 .safe1 .text_area .sub_tit { font-size:18px; color:#525252;}
+.cts327 .safe1 .text_area .main_tit { padding:10px 0; font-size:30px; font-weight:600; color:#000; line-height:35px; }
+.cts327 .safe2 .btn,.cts327 .safe2 img { margin:3px 20px; vertical-align:middle;} 
+.cts327 .safe2 p { margin:20px 0;  font-size:18px;}
+.cts327 .safe2 p .em_sky { color:#367eb6;}
+
+ 
+@media only screen and (max-width:1000px){
+	.cts327 .safe1 .box_wrap div {width:100% !important; margin:0 !important; text-align:center !important;}
+}
+@media only screen and (max-width:640px){
+	.cts327 .safe1 .text_area .main_tit { font-size:24px; }
+}
+@media only screen and (max-width:414px){
+	.cts327 .safe2 .btn,.cts327 .safe2 img { margin:3px 0;} 
+}
+
+/*  홈 > 태백소개 > 일반현황 > 태백의 유래와 연혁 > 태백의 유래  */
+.cts373 .tit_area { margin-bottom:30px; padding:0 5% 120px; background:url(../images/contents/cts373_titbg.png) no-repeat center bottom; text-align:center; word-break:keep-all;}
+.cts373 .tit_area h3 { padding:20px 0; text-align:center;}
+.cts373 .tit_area p { text-shadow:0px 1px #ffffff, 1px 1px 0px #ffffff ,-1px -1px 2px #ffffff;}
+.cts373 .tit_area p em { color:#a0410d;}
+.cts373 h4 {margin:30px 0 10px;  font-size:20px;  color:#363636;}
+
+@media only screen and (max-width:640px){
+	.cts373 .tit_area p br { display:none;}
+}
+
+/*  홈 > 태백소개 > 일반현황 > 태백의 유래와 연혁  >연혁  */
+.cts374 .bg_aera { margin-bottom:30px;}
+.cts374 .bg_aera:before { content:''; display:block; float:left; width:185px; height:170px; margin:0 15px 15px 0; background:url(../images/contents/cts374_bg.gif) no-repeat;}
+.cts374 .bg_aera.bg2:before { background-position:right top;}
+
+/*  홈 > 태백소개 > 일반현황 > 행정구역 > 행정구역  */
+.cts381 .intro {margin-bottom:30px; padding:20px 20px 20px 60px; background-color:#f3eee0; border:1px solid #000; word-break:keep-all;}
+.cts381 .intro .text_area { float:left; width:370px; padding:50px 0;  }
+.cts381 .intro .text_area p { margin-top:20px; font-size:16px; color:424242;}
+.cts381 .intro .text_area p em { font-size:18px;}
+.cts381 .intro .img_area { float:right;} 
+
+@media only screen and (max-width:1000px){
+	.cts381 .intro { padding:20px 1% 20px 3%;}
+	.cts381 .intro .text_area { float:none; display:inline-block; width:300px;}
+	.cts381 .intro .img_area { float:none; display:inline-block; width:425px; text-align:center;}
+}
+@media only screen and (max-width:800px){
+	.cts381 .intro { padding:20px 3% ;}
+	.cts381 .intro .text_area ,.cts381 .intro .img_area { width:100%;} 
+}
+
+/*  홈 > 태백소개 > 태백의 상징 > 심벌 > 심벌  */
+.symbol_mark .box.type3.simple_img_box { padding-left:200px;}
+.symbol_mark .simple_img {width:134px; height:86px;background-image:url("../images/contents/cts384_icon.gif")}
+.symbol_mark .small_icon { display:inline-block; overflow:hidden; background-repeat:no-repeat; background-image:url(../images/contents/cts384_icon_s.gif); text-indent:120%; vertical-align:middle;}
+.symbol_mark .small_icon.icon1 { width:26px; height:21px; background-position:-2px center;} 
+.symbol_mark .small_icon.icon2 { width:27px; height:21px; background-position:-44px center;} 
+.symbol_mark .small_icon.icon3 { width:31px; height:21px; background-position:-81px center;} 
+
+
+@media only screen and (max-width:640px){
+	.symbol_mark .box.type3.simple_img_box { padding-left:40px;}
+	.symbol_mark .box.type3.simple_img_box .simple_img { position:static; width:100%; margin-bottom:30px; }
+}
+
+/*  홈 > 태백소개 > 태백의 상징 > 도시브랜드(CI) > 도시브랜드(CI)  */
+.ci_box { padding:40px 5%;  border:1px solid #e6e6e6;  text-align:center;}
+.ci_box.ci1 ul li {display:inline-block; max-width:30%; margin:0 5px;}
+.ci_box.ci1 ul li:first-child { display:block; max-width:100%; width:100%; margin:0 0 50px;} 
+.ci_box.ci1 ul li span { display:block;}
+.ci_box.ci1 ul li span.text { padding:10px 0; font-size:15px; font-weight:600; color:#000;}
+
+/*.cts386 h3.ci2 { padding:20px 0;  text-align:center;}*/
+.ci_box.ci2 { margin-bottom:30px; padding:40px 0%;}
+.ci_box.ci2 ul li { float:left; width:48%; padding:0 1%;}
+.ci_box.ci2 ul li:first-child { display:block; max-width:100%; width:100%; margin:0 0 50px; padding:0} 
+.ci_box.ci2 ul li span.img_area { float:left;}
+.ci_box.ci2 ul li .text_area { float:right; width:200px;}
+.ci_box.ci2 ul li .text_area ul { margin:30px 0 0;}
+.ci_box.ci2 ul li .text_area ul li { float:none; width:100%; margin:0; padding-left:15px;}
+
+@media only screen and (max-width:1000px){
+	.ci_box.ci2 ul li span.img_area { display:block;  float:none; text-align:center;}
+	.ci_box.ci2 ul li .text_area { float:none; margin:0 auto; vertical-align:top;}
+}
+@media only screen and (max-width:640px){
+	.ci_box.ci1 ul li { max-width:100%; margin:5px 0;}
+	.ci_box.ci2 ul li span.img_area { width:100%; text-align:center; }
+
+}
+
+@media only screen and (max-width:450px){
+	.ci_box.ci2 ul li { float:none; width:90%; padding:0 5%;}
+}
+
+/*  홈 > 태백소개 > 태백의 상징 > 캐릭터 > 캐릭터  */ 
+.cts388 .image_box { position:relative; min-height:270px; padding-left:320px;}
+.cts388 .image_box .img_area { position:absolute; left:0; top:0;}
+
+@media only screen and (max-width:640px){
+	.cts388 .image_box {  padding-left:0;}
+	.cts388 .image_box .img_area { position:relative; width:100%; margin-bottom:20px;  text-align:center; }
+}
+
+/*  홈 > 태백소개 > 태백의 상징 > 태백시민의 노래 > 태백시민의 노래  */ 
+.cts392 .box_wrap {  position:relative; min-height:670px; background:url(../images/contents/cts392_bg.gif) no-repeat left bottom #fff; }
+.cts392 .box_wrap .img_area { position:absolute; left:0; top:0;  width:437px; text-align:center;}
+.cts392 .box_wrap .img_area h3 { padding-top:65px; text-align:center;}
+.cts392 .box_wrap .img_area .btn_area { margin-top:615px;}
+.cts392 .box_wrap .text_area { padding:0 0 50px 460px; } 
+
+
+@media only screen and (max-width:800px){
+	.cts392 .box_wrap { background-position:center 100%; background-size:100% auto; }
+	.cts392 .box_wrap .img_area { position:static;  width:100%; height:230px;   }
+	.cts392 .box_wrap .img_area h3 { padding:30px 0 ;  }
+	.cts392 .box_wrap .img_area .btn_area { margin-top:0;}
+	.cts392 .box_wrap .text_area { padding:30px 0 300px; }
+	.cts392 .box_wrap .text_area .web_block { display:none;}
+	.cts392 .box_wrap .text_area p {text-shadow:2px 1px #fff, -1px -1px #fff;}
+}
+
+/*  스포츠 > 태백스포츠 > 전지훈련 > 성과분석 */
+.cts481 .intro { padding-bottom:30px; text-align:center;}
+.cts481 .intro p.tit { margin-bottom:10px; padding-top:120px; background:url(../images/contents/cts481_icon.gif) no-repeat center top; font-size:35px; color:#000; text-align:center;}
+.cts481 .intro p.tit em { font-weight:600; color:#2b5fa0;}
+.cts481 .down_list { border-left:1px solid #cdcdcd; border-top:1px solid #cdcdcd; }
+.cts481 .down_list li { float:left; width:33.333%; padding:30px 0; background-color:#f8f8f8; border-right:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd; box-sizing:border-box; text-align:center;}
+.cts481 .down_list li p.tit { margin-bottom:20px;  font-size:27px;  font-family:NanumM,times new roman; color:#000;}
+
+@media only screen and (max-width:640px){
+	.cts481 .down_list li { width:50%;}
+}
+
+/*   스포츠 >스포츠관련기관&단체 > 태백시체육회-하위메뉴 공통 */
+.cts1021_box .box_wrap { min-height:200px; background:url(../images/contents/cts1021_boxbg.gif) no-repeat left bottom #fff;}
+.cts1021_box .box_wrap .text_area { padding:40px 0 20px 320px; word-break:keep-all;}
+.cts1021_box .box_wrap .text_area h3 { padding:10px 0; margin-bottom:10px; color:#003471; font-size:30px; font-weight:600;}
+.cts1021_box .box_wrap .text_area p.tel strong { display:inline-block; color:#5674b9;  font-size:25px; }
+.cts1021_box .box_wrap .text_area p.tel strong em { font-weight:normal; color:#b9b9b9;}
+.cts1021_box .box_wrap .text_area p.tel span { display:inline-block; color:#717171; font-size:15px;}
+.cts1021_box .box_wrap .text_area p.text { margin-top:10px;}
+
+@media only screen and  (max-width:640px){
+	.cts1021_box .box_wrap { background:#fff;}
+	.cts1021_box .box_wrap .text_area { padding:210px 0 0 0;  background:url(../images/contents/cts1021_boxbg.gif) no-repeat center top}
+}
+
+
+/*  문화/관광 > 문화예술회관 > 대관안내 */
+.cts495 .star_notice { text-align:left;}
+.cts495 .simple_img {width:67px; height:73px;background-image:url("../images/contents/cts495_icon.gif")}
+
+/*  문화/관광 > 문화예술회관 > 이용자 관람예절 */
+.cts497 .simple_img {width:67px; height:73px;background-image:url("../images/contents/cts495_icon.gif")}
+
+/*  문화/관광 > 문화예술회관 > 찾아오시는길 - 그외 찾아오시는길 공통
+	-cts522
+*/
+ul.cts499_list { margin-top:20px;}
+ul.cts499_list li { float:left; width:50%; height:120px;  }
+ul.cts499_list li:before { content:""; display:inline-block; vertical-align:middle; height:100%; }
+ul.cts499_list li .text_area { max-height:100%; max-width:100%; display:inline-block; padding-left:100px;vertical-align:middle; }
+ul.cts499_list li.icon1  { background:url(../images/contents/cts499_icon1.gif) no-repeat left center;} 
+ul.cts499_list li.icon2  { background:url(../images/contents/cts499_icon1.gif) no-repeat left center;} 
+ul.cts499_list li .text_area .tit {color:#359c94; font-size:20px; font-weight:600;}
+
+@media only screen and  (max-width:1000px){
+	ul.cts499_list li {  width:100%;   }
+}
+@media only screen and  (max-width:640px){
+	ul.cts499_list li {  width:50%; height: auto;  padding:120px 3% 0; box-sizing:border-box;  background-position:center top !important; }
+	ul.cts499_list li .text_area { display:block; padding-left:0; text-align:center;}
+	ul.cts499_list li .text_area span { display:block;}
+	ul.cts499_list li:before  { display:none;}
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*게시판 상단 초기화버튼에 사용됨*/
+.bbs_search .submit.type2 { background-color:#fff; border-color:#4d5360; color:#444;}
+
+/*게시판 - 문화예술회관 영화상영기획공연*/
+.bbs_film{overflow:hidden;width:100%;margin:5px 0;border-top: 2px solid #151515; border-bottom: 1px solid #e9e9e9;}
+.bbs_film ul.list {width:101%;margin:10px -1%;}
+.bbs_film ul.list li{display:inline;overflow:hidden;float:left;width:32.333333%;margin:5px 0 5px 1%;min-height:445px;}
+.bbs_film ul.list li a {display:block;position:relative; text-align: center}
+.bbs_film ul.list li a span{display:inline-block}
+.bbs_film ul.list li a .photo {display:block;overflow:hidden;position:relative;width:269px;height:356px;margin:0 auto;background:url('/common/images/board/mask.png');border:1px solid #e9e9e9;font-size:0;line-height:356px;}
+.bbs_film ul.list li a .photo img{max-width:100%;max-height:356px;vertical-align:middle}
+.bbs_film ul.list li a .photo_info { width:269px; height:80px; margin:10px auto 0; border:1px solid #e9e9e9;} 
+.bbs_film ul.list li a:hover .photo img{transform: scale(1.1);  transition: all 400ms;}
+.bbs_film ul.list li a .subject{overflow: hidden;display:block;margin:15px 10px 0; color:#000; font-size:18px; font-weight:600; line-height:1.3em;white-space: nowrap;text-overflow: ellipsis;}
+.bbs_film ul.list li a .author{font-size:0.85em}
+.bbs_film ul.list li a .date{ margin-top:8px; font-size:15px;color:#686868}
+.bbs_film ul.list .empty{padding:10px 0;border-bottom:1px solid #e7e7e7;text-align:center;}
+.bbs_film ul.list li.delete .delete_info{font-size:11px;color:#2e84d1;vertical-align:center;}
+.bbs_film ul.list li.delete .subject{color:#aaa}
+*:first-child+html .bbs_film ul.list li a .photo {width:100%;}
+*:first-child+html .bbs_film ul.list li a .photo img{width:100%;height:180px}
+
+.bbs_film ul.list.subject_over .date{display:none}
+.bbs_film ul.list.subject_over .subject{position:absolute;bottom:0;left:0;width:96%;margin:0;padding:8px 2%;background:url('/common/images/board/mask2.png') ;color:#fff;text-align:left}
+
+@media only screen and  (max-width:1000px){
+    .bbs_film[data-photo-type="fixed"] ul.list li a .photo{width:auto;max-width:100%;}
+    .bbs_film[data-photo-type="fixed"] ul.list li a .photo img{max-width:100%;}
+	
+    .bbs_film ul.list li{width:47%; min-height:300px}
+    .bbs_film ul.list li a .photo { width:100%; height:200px; line-height:200px;box-sizing:border-box;}
+    .bbs_film ul.list li a .photo img{max-height:200px;}
+	.bbs_film ul.list li a .photo_info { width:100%; box-sizing:border-box;}
+    .bbs_film ul.list li.delete .delete_info{display:none}
+    .bbs_film ul.list li .checkbox{display:none}
+}
+@media only screen and  (max-width:480px){
+	.bbs_film ul.list li{width:100%; margin-left:0;} 
+}
+
+/*게시판 - 시정소식지*/
+.bbs_ebook{overflow:hidden;width:100%;margin:5px 0;border-top: 2px solid #151515; border-bottom: 1px solid #e9e9e9;}
+.bbs_ebook ul.list {width:101%;margin:10px -1%;}
+.bbs_ebook ul.list li{display:inline;overflow:hidden;float:left;width:32.333333%;margin:5px 0 5px 1%;min-height:190px;}
+.bbs_ebook ul.list li .photo_group {display:block;position:relative;padding:20px ;border:1px solid #e9e9e9;text-align: center}
+.bbs_ebook ul.list li .photo_group span{display:inline-block}
+.bbs_ebook ul.list li .photo_group .photo {display:block;overflow:hidden;position:relative; height:190px;margin:0 auto 20px;background:#f2f2f2;font-size:0;line-height:190px;}
+.bbs_ebook ul.list li .photo_group .photo img{max-width:100%;max-height:190px;vertical-align:middle}
+.bbs_ebook ul.list li .photo_group:hover .photo img{transform: scale(1.2);  transition: all 400ms;}
+.bbs_ebook ul.list li .photo_group .subject{overflow: hidden;display:block;margin:10px 5px 5px; font-size:17px; color:#505050;  font-weight:600; line-height:1.3em;white-space: nowrap;text-overflow: ellipsis;}
+.bbs_ebook ul.list li .photo_group .author{font-size:0.85em}
+.bbs_ebook ul.list li .photo_group .date{ display:block; margin-bottom:10px;  font-size:14px;color:#8c8c8c}
+.bbs_ebook ul.list .empty{padding:10px 0;border-bottom:1px solid #e7e7e7;text-align:center;}
+.bbs_ebook ul.list li.delete .delete_info{font-size:11px;color:#2e84d1;vertical-align:center;}
+.bbs_ebook ul.list li.delete .subject{color:#aaa}
+.bbs_ebook ul.list li .ico_group{position:absolute;top:5px;left:5px;z-index:10}
+.bbs_ebook ul.list li .ico_group .bbs_ico{margin-left:0;margin-right:1px}
+*:first-child+html .bbs_ebook ul.list li .photo_group .photo {width:100%;}
+*:first-child+html .bbs_ebook ul.list li .photo_group .photo img{width:100%;height:190px}
+
+.bbs_ebook ul.list.subject_over .date{display:none}
+.bbs_ebook ul.list.subject_over .subject{position:absolute;bottom:0;left:0;width:96%;margin:0;padding:8px 2%;background:url('/common/images/board/mask2.png') ;color:#fff;text-align:left}
+
+@media only screen and  (max-width:756px){
+    .bbs_ebook ul.list li{width:30%;}
+    .bbs_ebook[data-photo-type="fixed"] ul.list li .photo_group .photo{width:auto;max-width:100%;}
+    .bbs_ebook[data-photo-type="fixed"] ul.list li .photo_group .photo img{max-width:100%;}
+}
+@media only screen and (max-width:640px){
+    .bbs_ebook ul.list li{width:47%; min-height:140px}
+    .bbs_ebook ul.list li .photo_group .photo {line-height:140px}
+    .bbs_ebook ul.list li .photo_group .photo img{max-height:100%;}
+    .bbs_ebook ul.list li.delete .delete_info{display:none}
+    .bbs_ebook ul.list li .checkbox{display:none}
+}
+@media only screen and  (max-width:480px){
+	.bbs_ebook ul.list li{width:100%; margin-left:0;} 
+}
+
+/* 게시판 - 태백사랑상품권 가맹업소관리 현황*/
+.tblove_search {text-align: right;}
+.tblove_search .input_text{width:200px;height:28px;line-height:28px;}
+.tblove_search .submit{padding:1px 20px;border: 1px solid #686868;background:#686868;color: #fff;}
+.tblove_search .submit:hover{border: 1px solid #151515;background:#151515;}
+
+.tblove_total { color:#444;}
+.bbs_tblove ul.list {border-left:1px solid #dadada; border-top:1px solid #000;}
+.bbs_tblove ul.list li { float:left; width:20%; text-align:center;}
+.bbs_tblove ul.list li a { display:block; height:80px; padding:20px; border:1px solid #dadada; border-left:none;border-top:none; text-decoration:none; transition:all 0.2s ease-in-out;}
+.bbs_tblove ul.list li a span { display:block;}
+.bbs_tblove ul.list li a span.tit { overflow:hidden; height:50px;  font-size:17px; color:#2f2f2f; line-height:20px;}
+.bbs_tblove ul.list li a span.text { background:#fff; border:1px solid #b7b7b7; color:#c96800; font-size:15px; font-weight:600;  line-height:30px; }
+.bbs_tblove ul.list li a:hover { background:#c96800;}
+.bbs_tblove ul.list li a:hover span.tit { color:#fff;}
+
+
+@media only screen and  (max-width:1000px){
+	.bbs_tblove ul.list li {  width:25%; }
+}
+
+
+@media only screen and  (max-width:640px){
+	.bbs_tblove ul.list li {  width:50%; }
+}
+
+
+
+
+/*sub_content.css 조직도 추가*/
+.organization ul li.organ_depth0_li .mayorbox p.table-cell a{ color:#fff;}
+.organization ul li ul.organ_depth1_ul li.organ_depth1_li.list01 .deputybox p.table-cell a { color:#fff;}
+
+
+/* 홈 > 복지 > 복지정보통합서비스   */
+.cts1197 .bbs_explain_top .simple_img_box .simple_img { width:100px; background-image:url(/site/www/images/contents/cts1197_icon.jpg);}
+
+@media only screen and  (max-width:450px){
+	.cts1197 .bbs_explain_top .simple_img_box .simple_img { width:100%;}
+}
+
+
+/*  홈> 교통/주택 > 화물자동차운수사업 > 안내  */
+.process_box  { position:relative; min-height:985px; padding-left:500px;}
+.process_box .img_area { position:absolute; left:0; top:0; }
+.process_box .text_area h4 {  height:53px; border:1px dotted  #000; color:#000;  font-size:18px; font-weight:bold; text-align:center; line-height:53px;}
+.process_box .text_area .cont_box { position:relative;}
+.process_box .text_area .cont_box ul { padding-left:0;}
+.process_box .text_area .cont_box h5 { position:absolute; overflow:hidden; width:1px; height:1px;  text-indent:-100px; white-space:nowrap;}
+.process_box .text_area .cont_box .btn { margin-left:10px; }
+
+.process_box .text_area .cont_box.cont1 {margin-top:16px;}
+.process_box .text_area .cont_box.cont2 { margin-top:15px;}
+.process_box .text_area .cont_box.cont3 { margin-top:103px;}
+.process_box .text_area .cont_box.cont4 { margin-top:20px;}
+.process_box .text_area .cont_box.cont5 { margin-top:22px;}
+.process_box .text_area .cont_box.cont6 { margin-top:34px;}
+.process_box .text_area .cont_box.cont7 { margin-top:34px;}
+
+@media only screen and  (max-width:1000px){
+	.process_box  {  min-height:auto;  padding-left:0;}
+	.process_box .img_area { position:static; text-align:center;}
+	.process_box .text_area .cont_box { margin-top:0 !important;}
+	.process_box .text_area .cont_box h5 { position:static; overflow:visible; width:auto; height:auto; padding-left:0; text-indent:0; white-space:normal;}
+	.process_box .text_area .cont_box ul,.process_box .text_area .cont_box p { padding-left:20px;}
+	.process_box .text_area .cont_box h6 { margin:10px 0; padding-left:30px; }
+
+}
