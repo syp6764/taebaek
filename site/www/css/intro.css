@@ -4,7 +4,7 @@
 a{text-decoration:none;}
 
 /* 인트로페이지 */
-body{background-image:url("/site/www/images/intro/intro_bg.jpg"); font-family:'ONEMobile-title';}
+body{background-image:url("/taebaek/site/www/images/intro/intro_bg.jpg"); font-family:'ONEMobile-title';}
 #wrapper{width:1400px; margin:0 auto;}
 
 .top_box{margin-top:105px; text-align:center;}
@@ -13,13 +13,13 @@ body{background-image:url("/site/www/images/intro/intro_bg.jpg"); font-family:'O
 #container{position:relative; padding-right:147px; padding-left:148px;}
 .shortcut_box{display:block; position:relative; width:100%; margin-top:90px;}
 .shortcut_box .shortcut_list{font-size:0; line-height:0;}
-.shortcut_box .shortcut_list .shortcut_item{display:inline-block; position:relative; width:calc((100% - 100px) / 3); min-height:370px; margin-right:50px; border-radius:25px; background:url("/site/www/images/intro/intro_shortcut_bg.png") no-repeat center right; text-align:center; vertical-align:top; transition:transform 0.3s ease; filter:drop-shadow(10px 17px 55px rgba(0,0,0,0.15));}
-.shortcut_box .shortcut_list .shortcut_item.n2{background-image:url("/site/www/images/intro/intro_shortcut_bg02.png");}
-.shortcut_box .shortcut_list .shortcut_item.n3{background-image:url("/site/www/images/intro/intro_shortcut_bg03.png");}
+.shortcut_box .shortcut_list .shortcut_item{display:inline-block; position:relative; width:calc((100% - 100px) / 3); min-height:370px; margin-right:50px; border-radius:25px; background:url("/taebaek/site/www/images/intro/intro_shortcut_bg.png") no-repeat center right; text-align:center; vertical-align:top; transition:transform 0.3s ease; filter:drop-shadow(10px 17px 55px rgba(0,0,0,0.15));}
+.shortcut_box .shortcut_list .shortcut_item.n2{background-image:url("/taebaek/site/www/images/intro/intro_shortcut_bg02.png");}
+.shortcut_box .shortcut_list .shortcut_item.n3{background-image:url("/taebaek/site/www/images/intro/intro_shortcut_bg03.png");}
 .shortcut_box .shortcut_list .shortcut_item:last-child{margin-right:0;}
-.shortcut_box .shortcut_list .shortcut_item:before{display:block; position:absolute; top:65px; left:50%; z-index:-1; width:119px; height:100px; background:url("/site/www/images/intro/intro_icon01.png") no-repeat center; content:""; transform:translateX(-50%);}
-.shortcut_box .shortcut_list .shortcut_item.n2:before{top:62px; width:99px; height:103px; background-image:url("/site/www/images/intro/intro_icon02.png");}
-.shortcut_box .shortcut_list .shortcut_item.n3:before{top:58px; width:111px; height:112px; background-image:url("/site/www/images/intro/intro_icon03.png");}
+.shortcut_box .shortcut_list .shortcut_item:before{display:block; position:absolute; top:65px; left:50%; z-index:-1; width:119px; height:100px; background:url("/taebaek/site/www/images/intro/intro_icon01.png") no-repeat center; content:""; transform:translateX(-50%);}
+.shortcut_box .shortcut_list .shortcut_item.n2:before{top:62px; width:99px; height:103px; background-image:url("/taebaek/site/www/images/intro/intro_icon02.png");}
+.shortcut_box .shortcut_list .shortcut_item.n3:before{top:58px; width:111px; height:112px; background-image:url("/taebaek/site/www/images/intro/intro_icon03.png");}
 .shortcut_box .shortcut_list .shortcut_item .shortcut_wrap{display:block; padding-top:201px; padding-bottom:93px;}
 .shortcut_box .shortcut_list .shortcut_item .title{display:block; color:#1e82ce; font-size:28px; line-height:38px;}
 .shortcut_box .shortcut_list .shortcut_item.n2 .title{color:#12a63d;}
@@ -27,13 +27,13 @@ body{background-image:url("/site/www/images/intro/intro_bg.jpg"); font-family:'O
 .shortcut_box .shortcut_list .shortcut_item.n3 .title br{display:none;}
 .shortcut_box .shortcut_list .shortcut_item .text{display:block; margin-top:10px; color:#737373; font-size:18px; line-height:28px;}
 .shortcut_box .shortcut_list .shortcut_item .btn_box{display:block; position:absolute; right:15px; bottom:0;}
-.shortcut_box .shortcut_list .shortcut_item .btn_box .shortcut_arrow{display:block; position:absolute; right:40px; bottom:25px; width:18px; height:18px; background:url("/site/www/images/intro/intro_arrow.png")no-repeat center;}
+.shortcut_box .shortcut_list .shortcut_item .btn_box .shortcut_arrow{display:block; position:absolute; right:40px; bottom:25px; width:18px; height:18px; background:url("/taebaek/site/www/images/intro/intro_arrow.png")no-repeat center;}
 
 .sns_box{display:block; position:absolute; top:25px; right:-181px;}
 .sns_box .sns_list{font-size:0; line-height:0;}
 .sns_box .sns_list .sns_item{display:block; position:relative; width:60px; height:60px; margin-bottom:25px; border-radius:50%; background-color:#fff; box-shadow:10px 17px 35px 0 rgba(0,0,0,0.15);}
 .sns_box .sns_list .sns_item:last-child{margin-bottom:0;}
-.sns_box .sns_list .sns_item .sns_anchor:before{display:block; width:60px; height:60px; background:url("/site/www/images/intro/intro_sns.png")no-repeat top left; content:"";}
+.sns_box .sns_list .sns_item .sns_anchor:before{display:block; width:60px; height:60px; background:url("/taebaek/site/www/images/intro/intro_sns.png")no-repeat top left; content:"";}
 .sns_box .sns_list .sns_item.n2 .sns_anchor:before{background-position:top left -60px;}
 .sns_box .sns_list .sns_item.n3 .sns_anchor:before{background-position:top left -120px;}
 .sns_box .sns_list .sns_item.n4 .sns_anchor:before{background-position:top left -180px;}
@@ -44,9 +44,9 @@ body{background-image:url("/site/www/images/intro/intro_bg.jpg"); font-family:'O
 
 /* hover */
 @media all and (min-width:1001px){
-    .shortcut_box .shortcut_list .shortcut_item:hover{background:url("/site/www/images/intro/intro_shortcut_bg04.png") no-repeat center right; transform:translateY(-30px);}
-    .shortcut_box .shortcut_list .shortcut_item.n2:hover{background-image:url("/site/www/images/intro/intro_shortcut_bg05.png");}
-    .shortcut_box .shortcut_list .shortcut_item.n3:hover{background-image:url("/site/www/images/intro/intro_shortcut_bg06.png");}
+    .shortcut_box .shortcut_list .shortcut_item:hover{background:url("/taebaek/site/www/images/intro/intro_shortcut_bg04.png") no-repeat center right; transform:translateY(-30px);}
+    .shortcut_box .shortcut_list .shortcut_item.n2:hover{background-image:url("/taebaek/site/www/images/intro/intro_shortcut_bg05.png");}
+    .shortcut_box .shortcut_list .shortcut_item.n3:hover{background-image:url("/taebaek/site/www/images/intro/intro_shortcut_bg06.png");}
     .shortcut_box .shortcut_list .shortcut_item:hover .title,
     .shortcut_box .shortcut_list .shortcut_item:hover .text{color:#fff;}
     
@@ -107,9 +107,9 @@ body{background-image:url("/site/www/images/intro/intro_bg.jpg"); font-family:'O
     .shortcut_box .shortcut_list .shortcut_item .shortcut_wrap{padding-top:60px; padding-bottom:60px; padding-left:160px;}
     .shortcut_box .shortcut_list .shortcut_item.n3 .title br{display:none;}
     
-    .shortcut_box .shortcut_list .shortcut_item .btn_box{right:0; bottom:0; width:120px; height:74px; background:url("/site/www/images/intro/intro_shortcut_deco.png") no-repeat right bottom;}
-    .shortcut_box .shortcut_list .shortcut_item.n2 .btn_box{background-image:url("/site/www/images/intro/intro_shortcut_deco02.png");}
-    .shortcut_box .shortcut_list .shortcut_item.n3 .btn_box{background-image:url("/site/www/images/intro/intro_shortcut_deco03.png");}
+    .shortcut_box .shortcut_list .shortcut_item .btn_box{right:0; bottom:0; width:120px; height:74px; background:url("/taebaek/site/www/images/intro/intro_shortcut_deco.png") no-repeat right bottom;}
+    .shortcut_box .shortcut_list .shortcut_item.n2 .btn_box{background-image:url("/taebaek/site/www/images/intro/intro_shortcut_deco02.png");}
+    .shortcut_box .shortcut_list .shortcut_item.n3 .btn_box{background-image:url("/taebaek/site/www/images/intro/intro_shortcut_deco03.png");}
 }
 @media all and (max-width:640px){
     #wrapper{margin-right:3%; margin-left:3%;}
